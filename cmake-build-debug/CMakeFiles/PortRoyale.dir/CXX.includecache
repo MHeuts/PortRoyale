@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/Distance.hpp
+Helpers/String.hpp
+../include/Helpers/String.hpp
+
 ../include/Domain/Cannon.hpp
 WeightEnum.hpp
 ../include/Domain/WeightEnum.hpp
@@ -17,6 +21,8 @@ Helpers/String.hpp
 ../include/Domain/Helpers/String.hpp
 Domain/Goods.hpp
 ../include/Domain/Domain/Goods.hpp
+Distance.hpp
+../include/Domain/Distance.hpp
 
 ../include/Domain/Player.hpp
 Domain/Ship.hpp
@@ -58,9 +64,33 @@ iostream
 
 ../include/Helpers/Vector.hpp
 
+../include/States/AtSeaState.hpp
+Helpers/Random.hpp
+../include/States/Helpers/Random.hpp
+BaseState.hpp
+../include/States/BaseState.hpp
+Game.hpp
+../include/States/Game.hpp
+
 ../include/States/BaseState.hpp
 Helpers/String.hpp
 ../include/States/Helpers/String.hpp
+
+../include/States/CombatState.hpp
+Game.hpp
+-
+Domain/Ship.hpp
+../include/States/Domain/Ship.hpp
+BaseState.hpp
+../include/States/BaseState.hpp
+
+../include/States/HarbourState.hpp
+Domain/Harbour.hpp
+../include/States/Domain/Harbour.hpp
+BaseState.hpp
+../include/States/BaseState.hpp
+InitState.hpp
+../include/States/InitState.hpp
 
 ../include/States/InitState.hpp
 Game.hpp
@@ -83,4 +113,44 @@ Game.hpp
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.hpp
 fstream
 -
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp
+iostream
+-
+States/AtSeaState.hpp
+-
+States/HarbourState.hpp
+-
+States/CombatState.hpp
+-
+States/InitState.hpp
+-
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp
+States/CombatState.hpp
+-
+States/AtSeaState.hpp
+-
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp
+States/HarbourState.hpp
+-
+States/HarbourState.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/HarbourState.hpp
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp
+States/AtSeaState.hpp
+-
+States/InitState.hpp
+-
+States/InitState.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/InitState.hpp
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp
+iostream
+-
+Game.hpp
+-
+States/InitState.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.hpp
 

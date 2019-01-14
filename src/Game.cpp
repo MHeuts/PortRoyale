@@ -34,6 +34,7 @@ void Game::Quit() {
 
 void Game::setUp(){
     buildShipRepo();
+    buildHarbourRepo();
 
     _player.ReceiveGold(1000);
     _player.SetShip(shipRepository[0]);
@@ -106,12 +107,63 @@ void Game::buildShip(char* line, int i){
     if(Special == "licht"){
         shipRepository[i].SetWeight(Light);
     }
-
-
-
 }
 
 
 void Game::buildHarbourRepo() {
+    std::ifstream stream{"Assets/afstand_tussen_steden.csv"};
+    char line[500];
+    if(!stream.is_open()){
+        std::cout << "file not found\n";
+        exit(1);
+    }
+    int linenr{-4};
+
+    String names[24];
+    while(stream.getline(line, 500, '\n')){
+        if(linenr < 0){
+            linenr++;
+            continue;
+        }
+
+        String linestr(line);
+
+        buildHarbour(linestr, linenr);
+
+        linenr++;
+    }
+}
+
+
+void Game::buildHarbour(char *line, int i) {
+    String items[25];
+
+    auto size = 0;
+    auto current = 0;
+
+    char current_string[20];
+    memset(current_string, 0x00, 20);
+
+    for (size_t i = 0; i < strlen(line); i++)
+    {
+        if (line[i] == ';')
+        {
+            items[size++] = String(current_string);
+
+            memset(current_string, 0x00, 20);
+            current = 0;
+            continue;
+        }
+
+        current_string[current++] = line[i];
+    }
+
+    items[size] = String(current_string);
+
+    harbourRepository[i].SetName(items[0]);
+
+    for (int j = 1; j <= size; ++j) {
+        harbourRepository[i].SetDistance(j-1, atoi(items[j]));
+    }
 
 }
