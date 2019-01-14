@@ -10,8 +10,9 @@
 
 class Harbour {
 private:
-    String name;
-    Goods goods[15];
+    String _name;
+    Goods _goods[15];
+    int _distances[24];
 };
 
 

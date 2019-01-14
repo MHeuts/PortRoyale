@@ -15,3 +15,5 @@ add_executable(PortRoyale ${SRC_FILES})
 
 target_link_libraries(PortRoyale "-framework CoreFoundation")
 set_target_properties(PortRoyale PROPERTIES LINK_FLAGS "-Wl,-F/Library/Frameworks")
+
+FILE(COPY Assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

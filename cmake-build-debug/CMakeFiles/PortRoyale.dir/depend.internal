@@ -5,20 +5,27 @@ CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o
  ../include/Domain/Enemy.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
+ ../include/Helpers/String.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp
 CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o
+ ../include/Domain/Cannon.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
  ../include/Domain/WeightEnum.hpp
  ../include/Helpers/String.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Player.cpp
 CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o
+ ../include/Domain/Cannon.hpp
  ../include/Domain/Ship.hpp
  ../include/Domain/WeightEnum.hpp
+ ../include/Helpers/Random.hpp
  ../include/Helpers/String.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Ship.cpp
 CMakeFiles/PortRoyale.dir/src/Game.cpp.o
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
@@ -33,6 +40,8 @@ CMakeFiles/PortRoyale.dir/src/Game.cpp.o
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.cpp
 CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
@@ -50,6 +59,8 @@ CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp
 CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
@@ -65,10 +76,14 @@ CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp
 CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
+ ../include/Helpers/String.hpp
  ../include/States/HarbourState.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp
 CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
@@ -84,6 +99,8 @@ CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp
 CMakeFiles/PortRoyale.dir/src/main.cpp.o
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Harbour.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp

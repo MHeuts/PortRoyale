@@ -6,9 +6,19 @@
 #include <States/AtSeaState.hpp>
 
 void CombatState::EnterState() {
-    std::cout << "Enemy ship Ahead!\n";
-    enemyShip.GenerateValues("Pinnace");
+    enemyShip = _game->getShip(Random::GetInstance().GetRandom(12));
+    int cannonamount = Random::GetInstance().GetRandom(enemyShip.FreeCannonSpace());
+    for(int i = 0; i<cannonamount; ++i){
+        int cannontype = Random::GetInstance().GetRandom(3);
+        if(cannontype == 1)
+            enemyShip.AddCannon(Light);
+        else if(cannontype == 2)
+            enemyShip.AddCannon(Normal);
+        else if(cannontype == 3)
+            enemyShip.AddCannon(Heavy);
+    }
 
+    std::cout << "Enemy "<< enemyShip.GetName() <<" Ahead!\n";
 }
 
 void CombatState::ShowOptions() {
@@ -26,7 +36,7 @@ void CombatState::HandleInput() {
     } else if(input == "Surrender") {
         _surrender();
     } else {
-        std::cout << "invalid Input \n";
+        std::cout << "Your crew did not understand what you said! \n";
     }
 }
 

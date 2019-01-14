@@ -89,9 +89,9 @@ public:
     };
 
     String& operator +=(const String& other) {
-        auto length1 = length_ + stringLength(other);
+        auto newLength = length_ + stringLength(other);
 
-        char* temp = new char[length1];
+        char* temp = new char[newLength];
 
         for (unsigned j=0; j < length_; j++)
             temp[j] = string_[j];
@@ -100,10 +100,25 @@ public:
             temp[length_+i] = other[i];
 
         delete[] string_;
-        length_ = length1;
+        length_ = newLength;
         string_ = temp;
         return *this;
     };
+
+    String&operator += (const char other){
+        auto newLength = length_ +1;
+        char temp[newLength];
+
+        for (int i = 0;i< length_; ++i){
+            temp[i] = string_[i];
+        }
+        temp[length_] = other;
+        delete[] string_;
+        length_= newLength;
+        string_ = temp;
+
+        return *this;
+    }
 
     friend std::ostream& operator <<(std::ostream& os, const String& other) {
         os << other.string_;
@@ -118,6 +133,22 @@ public:
 
         return is;
     };
+
+    String Split(char symbol){
+
+        int index{0};
+        String part{""};
+
+        while (index < length_) {
+            if (string_[index] == symbol) {
+                break;
+            } else {
+                part += string_[index];
+            }
+            ++index;
+        }
+        return part;
+    }
 
 private:
 

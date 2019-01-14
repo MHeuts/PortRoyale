@@ -3,36 +3,33 @@
 //
 
 #include <Domain/Ship.hpp>
-#include <fstream>
-
+#include "Helpers/Random.hpp"
 #include "Domain/Ship.hpp"
 
 void Ship::GenerateValues(String shipType) {
-
-    std::ifstream stream;
-    stream.open("Assets/schepen.csv");
-    char line[500];
-    while(stream.getline(line, 500, '\n')){
-        std::cout << line << "\n";
-    }
-
     _maxHitPoints = 100;
     _currentHitPoints = _maxHitPoints;
     _cargoSpace = 200;
     _cannonSpace = 8;
     _weight = WeightEnum(Light);
     _isSmall = true;
-    _type = shipType;
+    _name = shipType;
 }
 
 void Ship::ReceiveDamage(int damage) {
-    //_currentHitPoints -= Damage;
+    _currentHitPoints -= damage;
 }
 
 int Ship::GetDamageOutput(){
     int totalDamage{0};
-    for(int i = 0; i < _cannonSpace; ++i){
-        ++totalDamage;
+    for(int i=0;i<_smallCannonAmount;i++){
+        totalDamage+=Random::GetInstance().GetRandom(2);
+    }
+    for(int i=0;i<_mediumCannonAmount;i++){
+        totalDamage+=Random::GetInstance().GetRandom(4);
+    }
+    for(int i=0;i<_heavyCannonAmount;i++){
+        totalDamage+=Random::GetInstance().GetRandom(4);
     }
     return totalDamage;
 }
@@ -43,4 +40,33 @@ bool Ship::IsLog() {
 
 bool Ship::IsLight() {
     return _weight == Light;
+}
+
+bool Ship::IsSmall() {
+    return _isSmall;
+}
+
+void Ship::AddCannon(WeightEnum weight) {
+    if(TotalCannonAmount() >= _cannonSpace)
+        return;
+
+    if(weight == Light)
+        ++_smallCannonAmount;
+    else if (weight == Normal)
+        ++_mediumCannonAmount;
+    else if (weight == Heavy)
+        ++_heavyCannonAmount;
+}
+
+void Ship::RemoveCannon(WeightEnum weight) {
+    if(weight == Light && _smallCannonAmount > 0)
+        --_smallCannonAmount;
+    else if (weight == Normal && _mediumCannonAmount > 0)
+        --_mediumCannonAmount;
+    else if (weight == Heavy && _heavyCannonAmount > 0)
+        --_heavyCannonAmount;
+}
+
+void Ship::Repair() {
+    _currentHitPoints = _maxHitPoints;
 }

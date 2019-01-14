@@ -26,8 +26,13 @@ public:
 
     StateManager &StateHandler() { return stateManager; }
     Player &player() { return  _player; }
+    Ship getShip(int i) { return shipRepository[i]; }
 
 private:
+    void setUp();
+    void buildShipRepo();
+    void buildHarbourRepo();
+    void buildShip(char* line, int i);
     Ship shipRepository[13];
     Harbour harbourRepository[24];
 };
