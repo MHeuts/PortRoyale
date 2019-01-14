@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Domain/Ship.hpp
+Helpers/String.hpp
+-
+WeightEnum.hpp
+../include/Domain/WeightEnum.hpp
+
+../include/Domain/WeightEnum.hpp
+
+../include/Helpers/String.hpp
+iostream
+-
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Ship.cpp
+Domain/Ship.hpp
+-
+fstream
+-
+Domain/Ship.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Domain/Ship.hpp
+
