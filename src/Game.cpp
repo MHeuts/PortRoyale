@@ -5,13 +5,14 @@
 #include <States/InitState.hpp>
 #include "Game.hpp"
 #include <fstream>
+#include <States/HarbourState.hpp>
 
 Game::Game() {
 };
 
 void Game::Run() {
     setUp();
-    stateManager.push_state<InitState>(this);
+    stateManager.push_state<HarbourState>(this);
     while(_running){
         String input;
 
@@ -38,6 +39,8 @@ void Game::setUp(){
 
     _player.ReceiveGold(1000);
     _player.SetShip(shipRepository[0]);
+
+    _currentHarbour = harbourRepository[0];
 }
 
 void Game::buildShipRepo() {

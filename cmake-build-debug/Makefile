@@ -366,6 +366,33 @@ src/States/InitState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.s
 .PHONY : src/States/InitState.cpp.s
 
+src/States/SetSailState.o: src/States/SetSailState.cpp.o
+
+.PHONY : src/States/SetSailState.o
+
+# target to build an object file
+src/States/SetSailState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o
+.PHONY : src/States/SetSailState.cpp.o
+
+src/States/SetSailState.i: src/States/SetSailState.cpp.i
+
+.PHONY : src/States/SetSailState.i
+
+# target to preprocess a source file
+src/States/SetSailState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.i
+.PHONY : src/States/SetSailState.cpp.i
+
+src/States/SetSailState.s: src/States/SetSailState.cpp.s
+
+.PHONY : src/States/SetSailState.s
+
+# target to generate assembly for a file
+src/States/SetSailState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.s
+.PHONY : src/States/SetSailState.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -429,6 +456,9 @@ help:
 	@echo "... src/States/InitState.o"
 	@echo "... src/States/InitState.i"
 	@echo "... src/States/InitState.s"
+	@echo "... src/States/SetSailState.o"
+	@echo "... src/States/SetSailState.i"
+	@echo "... src/States/SetSailState.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -24,6 +24,8 @@ public:
 private:
     Game* _game;
     String input;
+
+    void repairShip();
 };
 
 

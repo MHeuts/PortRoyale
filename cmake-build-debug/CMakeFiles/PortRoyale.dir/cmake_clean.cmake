@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o"
+  "CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/main.cpp.o"
   "PortRoyale.pdb"
   "PortRoyale"

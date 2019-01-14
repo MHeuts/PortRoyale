@@ -13,48 +13,11 @@
 class Ship {
 public:
     Ship() = default;
-    Ship(const Ship& other) {
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
-    }
-
+    Ship(const Ship& other);
     Ship(Ship&&) = delete;
-    Ship& operator = (const Ship& other) {
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
-
-        return *this;
-    }
-    Ship& operator = (Ship&& other){
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
-
-        return *this;
-    }
+    Ship& operator = (const Ship& other);
+    Ship& operator = (Ship&& other);
+    ~Ship() = default;
 
 private:
     String _name;
@@ -84,16 +47,15 @@ private:
     int _currentHitPoints {0};
 
 public:
-    void GenerateValues(String type);
     int GetCurrentHitPoints() { return _currentHitPoints; }
     bool IsDestroyed() { return _currentHitPoints <= 0; }
     void Repair();
     int TotalCannonAmount() { return _smallCannonAmount+_mediumCannonAmount+_heavyCannonAmount; }
     int FreeCannonSpace() { return _cannonSpace - TotalCannonAmount(); }
+    int LostHitpoints() { return _maxHitPoints - _currentHitPoints; }
     bool IsLog();
     bool IsLight();
     bool IsSmall();
-
     void AddCannon(WeightEnum weight);
     void RemoveCannon(WeightEnum weight);
 

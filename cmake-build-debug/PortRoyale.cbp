@@ -111,6 +111,9 @@
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>

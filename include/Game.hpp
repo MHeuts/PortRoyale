@@ -16,7 +16,7 @@ private:
     bool _running = true;
     StateManager stateManager;
     Player _player;
-    Harbour _destination;
+    Harbour _currentHarbour;
 
 public:
     Game();
@@ -28,7 +28,7 @@ public:
     Player &player() { return  _player; }
     Ship getShip(int i) { return shipRepository[i]; }
 
-    Harbour GetDestination() { return _destination; }
+    Harbour GetCurrentHarbour() { return _currentHarbour; }
 private:
     void setUp();
     void buildShipRepo();

@@ -3,8 +3,6 @@
 //
 
 #include <States/AtSeaState.hpp>
-#include <States/InitState.hpp>
-
 #include "States/InitState.hpp"
 
 void InitState::EnterState() {

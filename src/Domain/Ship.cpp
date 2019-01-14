@@ -2,19 +2,8 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
-#include <Domain/Ship.hpp>
 #include "Helpers/Random.hpp"
 #include "Domain/Ship.hpp"
-
-void Ship::GenerateValues(String shipType) {
-    _maxHitPoints = 100;
-    _currentHitPoints = _maxHitPoints;
-    _cargoSpace = 200;
-    _cannonSpace = 8;
-    _weight = WeightEnum(Light);
-    _isSmall = true;
-    _name = shipType;
-}
 
 void Ship::ReceiveDamage(int damage) {
     _currentHitPoints -= damage;
@@ -69,4 +58,45 @@ void Ship::RemoveCannon(WeightEnum weight) {
 
 void Ship::Repair() {
     _currentHitPoints = _maxHitPoints;
+}
+
+Ship::Ship(const Ship &other) {
+    if(this != &other){
+        _name = other._name;
+        _price = other._price;
+        _cargoSpace = other._cargoSpace;
+        _maxHitPoints = other._maxHitPoints;
+        _currentHitPoints = other._currentHitPoints;
+        _cannonSpace = other._cannonSpace;
+        _isSmall = other._isSmall;
+        _weight = other._weight;
+    }
+}
+
+Ship &Ship::operator=(const Ship &other) {
+    if(this != &other){
+        _name = other._name;
+        _price = other._price;
+        _cargoSpace = other._cargoSpace;
+        _maxHitPoints = other._maxHitPoints;
+        _currentHitPoints = other._currentHitPoints;
+        _cannonSpace = other._cannonSpace;
+        _isSmall = other._isSmall;
+        _weight = other._weight;
+    }
+    return *this;
+}
+
+Ship &Ship::operator=(Ship &&other) {
+    if(this != &other){
+        _name = other._name;
+        _price = other._price;
+        _cargoSpace = other._cargoSpace;
+        _maxHitPoints = other._maxHitPoints;
+        _currentHitPoints = other._currentHitPoints;
+        _cannonSpace = other._cannonSpace;
+        _isSmall = other._isSmall;
+        _weight = other._weight;
+    }
+    return *this;
 }
