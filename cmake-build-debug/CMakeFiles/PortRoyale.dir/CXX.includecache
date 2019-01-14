@@ -112,11 +112,15 @@ Helpers/String.hpp
 Helpers/Vector.hpp
 ../include/States/Helpers/Vector.hpp
 
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp
-Domain/Harbour.hpp
--
-Domain/Harbour.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Domain/Harbour.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Player.cpp
+Domain/Player.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Domain/Player.hpp
+
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Ship.cpp
+Helpers/Random.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Helpers/Random.hpp
+Domain/Ship.hpp
+/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Domain/Ship.hpp
 
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.cpp
 States/InitState.hpp
@@ -161,6 +165,8 @@ States/InitState.hpp
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/InitState.hpp
 
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp
+States/SetSailState.hpp
+-
 States/SetSailState.hpp
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/SetSailState.hpp
 

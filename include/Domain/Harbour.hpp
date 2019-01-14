@@ -12,10 +12,24 @@
 class Harbour {
 public:
     Harbour() = default;
-    Harbour(const Harbour& other);
-    Harbour(Harbour&&);
+    Harbour(const Harbour& other) : _name{other._name} {
+//        for (int i = 0; i < 15; ++i) {
+//            _goods[i] = other._goods[i];
+//        }
+        for (int j = 0; j < 24; ++j) {
+            _distances[j] = other._distances[j];
+        }
+    }
+    Harbour(Harbour&& other) noexcept : _name{other._name} {
+//        for (int i = 0; i < 15; ++i) {
+//            _goods[i] = std::move(other._goods[i]);
+//        }
+        for (int j = 0; j < 24; ++j) {
+            _distances[j] = std::move(other._distances[j]);
+        }
+    }
     Harbour&operator=(const Harbour& other);
-    Harbour&operator=(Harbour&& other);
+    Harbour&operator=(Harbour&& other) noexcept;
     ~Harbour() = default;
 private:
     String _name;

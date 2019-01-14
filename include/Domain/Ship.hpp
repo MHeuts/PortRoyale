@@ -13,10 +13,17 @@
 class Ship {
 public:
     Ship() = default;
-    Ship(const Ship& other);
+    Ship(const Ship& other) :   _name{other._name},
+                                _price{other._price},
+                                _cargoSpace{other._cargoSpace},
+                                _cannonSpace{other._cargoSpace},
+                                _maxHitPoints{other._maxHitPoints},
+                                _currentHitPoints{other._currentHitPoints},
+                                _isSmall{other._isSmall},
+                                _weight{other._weight} { }
     Ship(Ship&&) = delete;
     Ship& operator = (const Ship& other);
-    Ship& operator = (Ship&& other);
+    Ship& operator = (Ship&& other) noexcept;
     ~Ship() = default;
 
 private:
@@ -38,7 +45,7 @@ public:
     void SetSmall(bool isSmall) { _isSmall = isSmall; }
     void SetWeight(WeightEnum weight) { _weight = weight; }
 
-    const String GetName() { return _name; }
+    String GetName() const { return _name; }
 
 private:
     int _smallCannonAmount {0};
@@ -47,17 +54,20 @@ private:
     int _currentHitPoints {0};
 
 public:
-    int GetCurrentHitPoints() { return _currentHitPoints; }
-    bool IsDestroyed() { return _currentHitPoints <= 0; }
-    void Repair();
-    int TotalCannonAmount() { return _smallCannonAmount+_mediumCannonAmount+_heavyCannonAmount; }
-    int FreeCannonSpace() { return _cannonSpace - TotalCannonAmount(); }
-    int LostHitpoints() { return _maxHitPoints - _currentHitPoints; }
-    bool IsLog();
-    bool IsLight();
-    bool IsSmall();
+    int GetCurrentHitPoints() const { return _currentHitPoints; }
+    int TotalCannonAmount() const { return _smallCannonAmount+_mediumCannonAmount+_heavyCannonAmount; }
+    int FreeCannonSpace() const { return _cannonSpace - TotalCannonAmount(); }
+    int LostHitpoints() const { return _maxHitPoints - _currentHitPoints; }
+
+    bool IsDestroyed() const { return _currentHitPoints <= 0; }
+    bool IsLog() const { return _weight == Heavy; }
+    bool IsLight() const { return _weight == Light; }
+    bool IsSmall() const { return _isSmall; }
+
     void AddCannon(WeightEnum weight);
     void RemoveCannon(WeightEnum weight);
+
+    void Repair();
 
     void ReceiveDamage(int Damage);
     int GetDamageOutput();

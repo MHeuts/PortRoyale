@@ -22,5 +22,6 @@ public:
 private:
     Game* _game;
     String input;
+    bool isDestination(String input);
 };
 #endif //PORTROYALE_SETSAILSTATE_HPP

@@ -13,7 +13,7 @@ void HarbourState::EnterState() {
 
 void HarbourState::ShowOptions() {
     std::cout << "What do you want to do:\nOptions:\n"
-                 " Buy Goods\n Sell Goods\n Buy Cannons\n Sell Connons\n Buy Ship\n Set Sail\n Quit\n";
+                 " Buy_Goods\n Sell_Goods\n Buy_Cannons\n Sell_Connons\n Buy_Ship\n Set_Sail\n Quit\n";
 }
 
 void HarbourState::HandleInput() {
@@ -21,17 +21,17 @@ void HarbourState::HandleInput() {
     std::cin >> input;
     if(input == "Quit" || input == "quit"){
         _game->Quit();
-    } else if (input == "Buy Goods"){
+    } else if (input == "Buy_Goods"){
         std::cout << "Market is still closed\n";
-    } else if (input == "Sell Goods"){
+    } else if (input == "Sell_Goods"){
         std::cout << "Market is still closed\n";
-    } else if (input == "Buy Cannons"){
+    } else if (input == "Buy_Cannons"){
         std::cout << "Market is still closed\n";
-    } else if (input == "Sell Cannons"){
+    } else if (input == "Sell_Cannons"){
         std::cout << "Market is still closed\n";
-    } else if (input == "Buy Ship"){
+    } else if (input == "Buy_Ship"){
         std::cout << "Market is still closed\n";
-    } else if (input == "Set Sail"){
+    } else if (input == "Set_Sail"){
         _game->StateHandler().push_state<SetSailState>(_game);
     } else if (input == "Repair"){
         repairShip();

@@ -23,18 +23,6 @@ int Ship::GetDamageOutput(){
     return totalDamage;
 }
 
-bool Ship::IsLog() {
-    return _weight == Heavy;
-}
-
-bool Ship::IsLight() {
-    return _weight == Light;
-}
-
-bool Ship::IsSmall() {
-    return _isSmall;
-}
-
 void Ship::AddCannon(WeightEnum weight) {
     if(TotalCannonAmount() >= _cannonSpace)
         return;
@@ -60,43 +48,28 @@ void Ship::Repair() {
     _currentHitPoints = _maxHitPoints;
 }
 
-Ship::Ship(const Ship &other) {
-    if(this != &other){
-        _name = other._name;
-        _price = other._price;
-        _cargoSpace = other._cargoSpace;
-        _maxHitPoints = other._maxHitPoints;
-        _currentHitPoints = other._currentHitPoints;
-        _cannonSpace = other._cannonSpace;
-        _isSmall = other._isSmall;
-        _weight = other._weight;
-    }
-}
-
 Ship &Ship::operator=(const Ship &other) {
-    if(this != &other){
-        _name = other._name;
-        _price = other._price;
-        _cargoSpace = other._cargoSpace;
-        _maxHitPoints = other._maxHitPoints;
-        _currentHitPoints = other._currentHitPoints;
-        _cannonSpace = other._cannonSpace;
-        _isSmall = other._isSmall;
-        _weight = other._weight;
-    }
+    if(this == &other) return *this;
+    _name = other._name;
+    _price = other._price;
+    _cargoSpace = other._cargoSpace;
+    _maxHitPoints = other._maxHitPoints;
+    _currentHitPoints = other._currentHitPoints;
+    _cannonSpace = other._cannonSpace;
+    _isSmall = other._isSmall;
+    _weight = other._weight;
     return *this;
 }
 
-Ship &Ship::operator=(Ship &&other) {
-    if(this != &other){
-        _name = other._name;
-        _price = other._price;
-        _cargoSpace = other._cargoSpace;
-        _maxHitPoints = other._maxHitPoints;
-        _currentHitPoints = other._currentHitPoints;
-        _cannonSpace = other._cannonSpace;
-        _isSmall = other._isSmall;
-        _weight = other._weight;
-    }
+Ship &Ship::operator=(Ship &&other) noexcept{
+    if(this == &other) return *this;
+    _name = other._name;
+    _price = other._price;
+    _cargoSpace = other._cargoSpace;
+    _maxHitPoints = other._maxHitPoints;
+    _currentHitPoints = other._currentHitPoints;
+    _cannonSpace = other._cannonSpace;
+    _isSmall = other._isSmall;
+    _weight = other._weight;
     return *this;
 }
