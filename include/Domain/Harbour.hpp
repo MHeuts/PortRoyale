@@ -38,8 +38,8 @@ private:
 public:
     void SetName(String name) { _name = name; }
     void SetDistance(int i, int distance, String name);
-    String GetName() { return _name; }
-    Distance GetDistance(int i) { return _distances[i]; }
+    String &GetName() { return _name; }
+    Distance &GetDistance(int i) { return _distances[i]; }
 };
 
 

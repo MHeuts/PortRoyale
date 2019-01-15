@@ -16,7 +16,7 @@ public:
     Ship(const Ship& other) :   _name{other._name},
                                 _price{other._price},
                                 _cargoSpace{other._cargoSpace},
-                                _cannonSpace{other._cargoSpace},
+                                _cannonSpace{other._cannonSpace},
                                 _maxHitPoints{other._maxHitPoints},
                                 _currentHitPoints{other._currentHitPoints},
                                 _isSmall{other._isSmall},

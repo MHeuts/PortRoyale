@@ -129,6 +129,7 @@ CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Helpers/Rand
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Helpers/Stack.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Helpers/String.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Helpers/Vector.hpp
+CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/States/AtSeaState.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/States/BaseState.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/States/SetSailState.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/States/StateManager.hpp

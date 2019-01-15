@@ -28,7 +28,7 @@ public:
     Player &player() { return  _player; }
     Ship getShip(int i) { return shipRepository[i]; }
 
-    Harbour GetCurrentHarbour() { return _currentHarbour; }
+    Harbour &GetCurrentHarbour() { return _currentHarbour; }
 private:
     void setUp();
     void buildShipRepo();

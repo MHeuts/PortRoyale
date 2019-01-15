@@ -130,6 +130,7 @@ CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o
  ../include/Helpers/Stack.hpp
  ../include/Helpers/String.hpp
  ../include/Helpers/Vector.hpp
+ ../include/States/AtSeaState.hpp
  ../include/States/BaseState.hpp
  ../include/States/SetSailState.hpp
  ../include/States/StateManager.hpp
