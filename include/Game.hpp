@@ -37,6 +37,10 @@ private:
     void buildHarbour(char* line, int i);
     Ship shipRepository[13];
     Harbour harbourRepository[24];
+
+    void setHarbourDestinations();
+
+    void buildHarbourDestinations(String line, int i);
 };
 
 

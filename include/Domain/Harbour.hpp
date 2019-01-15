@@ -34,12 +34,12 @@ public:
 private:
     String _name;
     Goods _goods[15];
-    int _distances[24];
+    Distance _distances[24];
 public:
     void SetName(String name) { _name = name; }
-    void SetDistance(int i, int distance);
+    void SetDistance(int i, int distance, String name);
     String GetName() { return _name; }
-    int GetDistance(int i) { return _distances[i]; }
+    Distance GetDistance(int i) { return _distances[i]; }
 };
 
 

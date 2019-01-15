@@ -14,7 +14,9 @@ private:
 public:
     Distance() = default;
     Distance(String name, int distance): _distance{distance}, _harbourName{name} { }
-    String GetName() { return _harbourName; }
-    int GetDistance() { return _distance; }
+    String GetName() const { return _harbourName; }
+    int GetDistance() const { return _distance; }
+    void SetName(String name) { _harbourName = name; }
+    void SetDistance(int distance) { _distance = distance; }
 };
 #endif //PORTROYALE_DISTANCE_HPP

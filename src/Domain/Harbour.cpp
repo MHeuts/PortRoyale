@@ -6,8 +6,9 @@
 
 #include "Domain/Harbour.hpp"
 
-void Harbour::SetDistance(int i, int distance) {
-    _distances[i] = distance;
+void Harbour::SetDistance(int i, int distance, String name) {
+    _distances[i].SetDistance(distance);
+    _distances[i].SetName(name);
 }
 
 Harbour &Harbour::operator=(const Harbour &other) {

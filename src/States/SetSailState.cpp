@@ -9,8 +9,8 @@
 void SetSailState::ShowOptions() {
     std::cout << "Whare do you want to set Sail For: \nOptions: \n" ;
     for (int i = 0; i < 24; ++i) {
-        int distance{_game->GetCurrentHarbour().GetDistance(i)};
-        std::cout << i << " : " << distance << "\n";
+        Distance distance{_game->GetCurrentHarbour().GetDistance(i)};
+        std::cout << distance.GetName() << " : " << distance.GetDistance() << "\n";
     }
     std::cout << "Return to Harbour\n";
 }
@@ -27,6 +27,12 @@ void SetSailState::HandleInput() {
 }
 
 bool SetSailState::isDestination(String input) {
+    for (int i = 0; i < 24; ++i) {
+        if(input == _game->GetCurrentHarbour().GetDistance(i).GetName()){
+
+            return true;
+        }
+    }
     return false;
 }
 
