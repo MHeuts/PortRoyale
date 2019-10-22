@@ -14,7 +14,7 @@ class AtSeaState : public BaseState{
 public:
     AtSeaState(Game* game, int turns): _game{game}, _turnsLeft{turns}{};
 
-    ~AtSeaState() = default;
+    ~AtSeaState() override = default;
     void EnterState() override;
     void LeaveState() override;
 

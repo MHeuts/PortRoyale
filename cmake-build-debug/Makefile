@@ -285,6 +285,33 @@ src/States/AtSeaState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.s
 .PHONY : src/States/AtSeaState.cpp.s
 
+src/States/BuyShipState.o: src/States/BuyShipState.cpp.o
+
+.PHONY : src/States/BuyShipState.o
+
+# target to build an object file
+src/States/BuyShipState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o
+.PHONY : src/States/BuyShipState.cpp.o
+
+src/States/BuyShipState.i: src/States/BuyShipState.cpp.i
+
+.PHONY : src/States/BuyShipState.i
+
+# target to preprocess a source file
+src/States/BuyShipState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.i
+.PHONY : src/States/BuyShipState.cpp.i
+
+src/States/BuyShipState.s: src/States/BuyShipState.cpp.s
+
+.PHONY : src/States/BuyShipState.s
+
+# target to generate assembly for a file
+src/States/BuyShipState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.s
+.PHONY : src/States/BuyShipState.cpp.s
+
 src/States/CombatState.o: src/States/CombatState.cpp.o
 
 .PHONY : src/States/CombatState.o
@@ -447,6 +474,9 @@ help:
 	@echo "... src/States/AtSeaState.o"
 	@echo "... src/States/AtSeaState.i"
 	@echo "... src/States/AtSeaState.s"
+	@echo "... src/States/BuyShipState.o"
+	@echo "... src/States/BuyShipState.i"
+	@echo "... src/States/BuyShipState.s"
 	@echo "... src/States/CombatState.o"
 	@echo "... src/States/CombatState.i"
 	@echo "... src/States/CombatState.s"

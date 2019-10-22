@@ -5,7 +5,7 @@
 #ifndef PORTROYALE_GOODS_HPP
 #define PORTROYALE_GOODS_HPP
 
-#endif //PORTROYALE_GOODS_HPP
+#include "Helpers/String.hpp"
 
 class Goods{
 private:
@@ -17,3 +17,5 @@ private:
     int minPrice;
     int maxPrice;
 };
+
+#endif //PORTROYALE_GOODS_HPP

@@ -12,26 +12,12 @@ private:
     int size_;
     T* data_;
 
-    void increaseCapacity(int new_cap) {
-        if (new_cap <= capacity_)
-            return;
 
-        T* temp_arr = new T*[new_cap];
-
-        for(int i = 0; i < capacity_; ++i) {
-            temp_arr[i] = data_[i];
-        }
-
-        capacity_ = new_cap;
-
-        delete[] data_;
-        data_ = temp_arr;
-    };
 
 public:
     Vector(): size_{0},
                 capacity_{10},
-                data_{new T*[capacity_]} { };
+                data_{new T[capacity_]} { };
 
     Vector(int capacity): size_{0},
                             capacity_{capacity},
@@ -39,7 +25,7 @@ public:
 
     Vector(const Vector& other): size_{other.size_},
                                      capacity_{other.capacity_},
-                                     data_{new T*[other.capacity_]}{
+                                     data_{new T[other.capacity_]}{
         for (int i = 0; i < size_; ++i) {
             data_[i] = other[i];
         }
@@ -93,8 +79,7 @@ public:
         return *this;
     };
 
-
-    void push_back(T* value) {
+    void push_back(const T &value) {
         if (size_ >= capacity_) increaseCapacity(2 * capacity_);
         data_[size_] = value;
         ++size_;
@@ -107,7 +92,6 @@ public:
     }
 
     const T operator[](int i) const {
-        if (i < 0 || i >= size_) return 0;
         return data_[i];
     };
 
@@ -133,6 +117,23 @@ public:
     void Clear() {
         delete[] data_;
         data_ = new T*[capacity_];
+    };
+
+private:
+    void increaseCapacity(int new_cap) {
+        if (new_cap <= capacity_)
+            return;
+
+        T* temp_arr = new T[new_cap];
+
+        for(int i = 0; i < capacity_; ++i) {
+            temp_arr[i] = data_[i];
+        }
+
+        capacity_ = new_cap;
+
+        delete[] data_;
+        data_ = temp_arr;
     };
 };
 

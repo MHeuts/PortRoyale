@@ -6,8 +6,10 @@
 #define PORTROYALE_HARBOUR_HPP
 
 #include "Helpers/String.hpp"
+#include "Helpers/Stack.hpp"
 #include "Domain/Goods.hpp"
 #include "Distance.hpp"
+#include "Ship.hpp"
 
 class Harbour {
 public:
@@ -28,18 +30,29 @@ public:
             _distances[j] = std::move(other._distances[j]);
         }
     }
+
     Harbour&operator=(const Harbour& other);
     Harbour&operator=(Harbour&& other) noexcept;
+
     ~Harbour() = default;
+
 private:
     String _name;
     Goods _goods[15];
     Distance _distances[24];
+    Vector<Ship> _availableShips;
+
 public:
+    String GetName() const { return _name; }
+    Distance GetDistance(int i) const { return _distances[i]; }
+
+    Vector<Ship> GetAvailableShips() { return _availableShips; }
+
+    void AddToShips(int i, Ship ship);
+    void GeneratePrices();
+
     void SetName(String name) { _name = name; }
     void SetDistance(int i, int distance, String name);
-    String &GetName() { return _name; }
-    Distance &GetDistance(int i) { return _distances[i]; }
 };
 
 

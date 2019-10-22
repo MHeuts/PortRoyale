@@ -22,5 +22,7 @@ void InitState::HandleInput() {
 }
 
 void InitState::ShowOptions() {
-    std::cout << "Options: \n Start\n Quit\n";
+    std::cout << "Options: \n"
+                 " Start\n"
+                 " Quit\n";
 }

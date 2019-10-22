@@ -31,32 +31,32 @@ public:
         ptr->next = _head;
         _head = ptr;
         ++ counter;
-    }
+    };
 
     ~Stack(){
-    }
+        while(counter > 0) {
+            Pop();
+        }
+    };
 
     const T* Peek(){
         return _head->data;
-    }
+    };
 
     const int count(){
         return counter;
-    }
+    };
 
     const T* Pop(){
         auto data = _head->data;
         _head = _head->next;
         -- counter;
         return data;
-    }
+    };
 
     const bool isEmpty(){
         return counter == 0;
-    }
-
-
-
+    };
 
 private:
     int counter;

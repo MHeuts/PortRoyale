@@ -12,7 +12,7 @@ class SetSailState: public BaseState{
 public:
     explicit SetSailState(Game* game): _game{game}{ }
 
-    ~SetSailState() = default;
+    ~SetSailState() override = default;
     void EnterState() override {};
     void LeaveState() override {};
 
@@ -21,7 +21,6 @@ public:
     void Update() override {};
 private:
     Game* _game;
-    String input;
     bool isDestination(String input);
 };
 #endif //PORTROYALE_SETSAILSTATE_HPP

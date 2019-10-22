@@ -2,44 +2,78 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
-#include <States/HarbourState.hpp>
 
 #include "States/SetSailState.hpp"
 #include "States/HarbourState.hpp"
+#include "States/BuyShipState.hpp"
 
 void HarbourState::EnterState() {
     std::cout << "Welcome to " << _game->GetCurrentHarbour().GetName() << "\n";
+    generateHarbour();
 }
 
 void HarbourState::ShowOptions() {
-    std::cout << "What do you want to do:\nOptions:\n"
-                 " Buy_Goods\n Sell_Goods\n Buy_Cannons\n Sell_Connons\n Buy_Ship\n Set_Sail\n Quit\n";
+    std::cout << "\nWhat do you want to do:\nOptions:\n"
+                 " > Buy Goods\n"
+                 " > Sell Goods\n"
+                 " > Buy Cannons\n"
+                 " > Sell Connons\n"
+                 " > Buy Ship\n"
+                 " > Repair Ship\n"
+                 " > Set Sail\n"
+                 " > Quit\n";
 }
 
 void HarbourState::HandleInput() {
-
+    String input;
     std::cin >> input;
     if(input == "Quit" || input == "quit"){
         _game->Quit();
-    } else if (input == "Buy_Goods"){
+    } else if (input == "Buy Goods") {
         std::cout << "Market is still closed\n";
-    } else if (input == "Sell_Goods"){
+    } else if (input == "Sell Goods") {
         std::cout << "Market is still closed\n";
-    } else if (input == "Buy_Cannons"){
+    } else if (input == "buy cannons") {
         std::cout << "Market is still closed\n";
-    } else if (input == "Sell_Cannons"){
+    } else if (input == "sell cannons") {
         std::cout << "Market is still closed\n";
-    } else if (input == "Buy_Ship"){
-        std::cout << "Market is still closed\n";
-    } else if (input == "Set_Sail"){
+    } else if (input == "Buy Ship") {
+        _game->StateHandler().push_state<BuyShipState>(_game);
+    } else if (input == "Repair Ship"){
+        repairShip();
+    } else if (input == "Set Sail") {
         _game->StateHandler().push_state<SetSailState>(_game);
-    } else if (input == "Repair"){
+    } else if (input == "repair") {
         repairShip();
     } else{
-        std::cout << "invalid Input \n";
+        std::cout << input << " is not a valid Input \n";
     }
 }
 
 void HarbourState::repairShip() {
-    int cost = _game->player().GetShip().LostHitpoints();
+    std::cout << "You can repair 10 Hit Points per Gold piece\n"
+                 "You currnetly own " << _game->player().GoldAmount() << " Gold Pieces\n"
+                 "Your ship has lost " << _game->player().GetShip().LostHitpoints() << "Hit Points\n"
+                 "How much do you want to pay?\n";
+
+
+    String in;
+    std::cin >> in;
+
+    char *end;
+    int payment = std::strtol(in, &end, 10);
+
+    _game->player().GetShip().Repair(payment*10);
+    _game->player().SpendGold(payment);
+    std::cout << "You repaired your ship for " << payment*10 << " hitpoints\n"
+                 "Your Ship is currently at " << _game->player().GetShip().GetCurrentHitPoints() << "!!\n";
 }
+
+void HarbourState::generateHarbour() {
+
+    for (int i = 0; i < 5; ++i) {
+        _game->GetCurrentHarbour().AddToShips(i, _game->getShip(Random::GetInstance().GetRandom(13)));
+    }
+    _game->GetCurrentHarbour().GeneratePrices();
+}
+

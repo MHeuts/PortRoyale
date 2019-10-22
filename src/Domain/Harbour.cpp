@@ -2,6 +2,7 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
+
 #include <Domain/Harbour.hpp>
 
 #include "Domain/Harbour.hpp"
@@ -26,3 +27,12 @@ Harbour &Harbour::operator=(Harbour &&other) noexcept {
     for (int j = 0; j < 24; ++j) _distances[j] = other._distances[j];
     return *this;
 }
+
+void Harbour::GeneratePrices() {
+
+}
+
+void Harbour::AddToShips(int i, Ship ship) {
+    _availableShips.push_back(ship);
+}
+

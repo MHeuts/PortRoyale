@@ -2,6 +2,8 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
+#include <Domain/Ship.hpp>
+
 #include "Helpers/Random.hpp"
 #include "Domain/Ship.hpp"
 
@@ -44,8 +46,9 @@ void Ship::RemoveCannon(WeightEnum weight) {
         --_heavyCannonAmount;
 }
 
-void Ship::Repair() {
-    _currentHitPoints = _maxHitPoints;
+void Ship::Repair(int repairPoints) {
+    _currentHitPoints += repairPoints;
+    if(_currentHitPoints >= _maxHitPoints) _currentHitPoints = _maxHitPoints;
 }
 
 Ship &Ship::operator=(const Ship &other) {

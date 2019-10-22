@@ -12,20 +12,28 @@
 class HarbourState: public BaseState {
 public:
 
-    explicit HarbourState(Game* game): _game{game}{ }
+    HarbourState(Game* game): _game{game} { }
 
-    ~HarbourState() = default;
+    ~HarbourState() override = default;
+
     void EnterState() override;
-    void LeaveState() override {};
+    void LeaveState() override { };
 
     void ShowOptions() override;
     void HandleInput() override;
     void Update() override {};
 private:
     Game* _game;
-    String input;
 
     void repairShip();
+    void BuyGoods();
+    void SellGoods();
+    void BuyCannons();
+    void SellCannons();
+
+    bool shipInavailibleList(String Shipname);
+
+    void generateHarbour();
 };
 
 

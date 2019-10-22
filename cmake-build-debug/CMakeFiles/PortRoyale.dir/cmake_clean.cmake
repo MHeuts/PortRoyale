@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/Game.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o"
+  "CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o"

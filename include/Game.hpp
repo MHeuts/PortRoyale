@@ -27,8 +27,10 @@ public:
     StateManager &StateHandler() { return stateManager; }
     Player &player() { return  _player; }
     Ship getShip(int i) { return shipRepository[i]; }
-
     Harbour &GetCurrentHarbour() { return _currentHarbour; }
+    Harbour getHarbour(int i) { return harbourRepository[i]; }
+
+    void SetCurrentHarbour(Harbour harbour) { _currentHarbour = harbour; }
 private:
     void setUp();
     void buildShipRepo();
