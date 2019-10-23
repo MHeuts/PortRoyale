@@ -77,7 +77,7 @@ void HarbourState::generateHarbour() {
     }
 
     setCannonStock();
-
+    setGoodsStock();
     _game->GetCurrentHarbour().GeneratePrices();
 }
 
@@ -87,5 +87,9 @@ void HarbourState::setCannonStock() {
     int heavy = Random::GetInstance().GetRandom(2);
 
     _game->GetCurrentHarbour().SetCannonStock(light, medium, heavy);
+}
+
+void HarbourState::setGoodsStock() {
+
 }
 

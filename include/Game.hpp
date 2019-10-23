@@ -43,6 +43,10 @@ private:
     void setHarbourDestinations();
 
     void buildHarbourDestinations(String line, int i);
+
+    void setHarbourGoods();
+
+    void buildHarbourGoods(String linestr, int linenr);
 };
 
 

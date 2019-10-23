@@ -6,6 +6,8 @@
 #define PORTROYALE_PLAYER_HPP
 
 #include "Domain/Ship.hpp"
+#include "Domain/Goods.hpp"
+
 class Player {
 
 public:
@@ -18,14 +20,19 @@ private:
     Ship _ship;
     int _gold {0};
 
+    Vector<Goods> Cargo;
+
 public:
 
     int GoldAmount() const  { return _gold; };
+    int AvailableSpace();
 
     void SetShip(Ship ship) { _ship = ship; };
     void ReceiveGold(int gold) { _gold += gold; };
     void SpendGold(int gold) { _gold -= gold; };
     void LooseAllCargo() {};
+
+
 
 };
 

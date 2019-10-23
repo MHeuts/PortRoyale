@@ -33,6 +33,8 @@ Ship.hpp
 ../include/Domain/Player.hpp
 Domain/Ship.hpp
 ../include/Domain/Domain/Ship.hpp
+Domain/Goods.hpp
+../include/Domain/Domain/Goods.hpp
 
 ../include/Domain/Ship.hpp
 Helpers/String.hpp
@@ -142,12 +144,6 @@ Helpers/String.hpp
 Helpers/Vector.hpp
 ../include/States/Helpers/Vector.hpp
 
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp
-Domain/Harbour.hpp
--
-Domain/Harbour.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Domain/Harbour.hpp
-
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.cpp
 States/InitState.hpp
 -
@@ -170,24 +166,6 @@ States/CombatState.hpp
 States/InitState.hpp
 -
 
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp
-States/BuyCannonsState.hpp
--
-States/BuyShipState.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/BuyShipState.hpp
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyShipState.cpp
-string.h
--
-States/BuyShipState.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/BuyShipState.hpp
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp
-States/CombatState.hpp
--
-States/AtSeaState.hpp
--
-
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp
 States/SetSailState.hpp
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/SetSailState.hpp
@@ -199,30 +177,4 @@ States/BuyCannonsState.hpp
 /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/BuyCannonsState.hpp
 States/SellCannonsState.hpp
 -
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp
-States/AtSeaState.hpp
--
-States/InitState.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/InitState.hpp
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp
-States/SellCannonsState.hpp
--
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp
-States/SetSailState.hpp
--
-States/AtSeaState.hpp
--
-States/SetSailState.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/States/SetSailState.hpp
-
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp
-iostream
--
-Game.hpp
--
-States/InitState.hpp
-/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.hpp
 
