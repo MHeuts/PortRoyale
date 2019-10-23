@@ -69,6 +69,24 @@ CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o
  ../include/States/InitState.hpp
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp
+CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o
+ ../include/Distance.hpp
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
+ ../include/Domain/Harbour.hpp
+ ../include/Domain/Player.hpp
+ ../include/Domain/Ship.hpp
+ ../include/Domain/WeightEnum.hpp
+ ../include/Game.hpp
+ ../include/Helpers/Random.hpp
+ ../include/Helpers/Stack.hpp
+ ../include/Helpers/String.hpp
+ ../include/Helpers/Vector.hpp
+ ../include/States/BaseState.hpp
+ ../include/States/BuyCannonsState.hpp
+ ../include/States/BuyShipState.hpp
+ ../include/States/StateManager.hpp
+ /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o
  ../include/Distance.hpp
  ../include/Domain/Cannon.hpp
@@ -118,9 +136,11 @@ CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o
  ../include/Helpers/String.hpp
  ../include/Helpers/Vector.hpp
  ../include/States/BaseState.hpp
+ ../include/States/BuyCannonsState.hpp
  ../include/States/BuyShipState.hpp
  ../include/States/HarbourState.hpp
  ../include/States/InitState.hpp
+ ../include/States/SellCannonsState.hpp
  ../include/States/SetSailState.hpp
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp
@@ -142,6 +162,23 @@ CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o
  ../include/States/InitState.hpp
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp
+CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o
+ ../include/Distance.hpp
+ ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
+ ../include/Domain/Harbour.hpp
+ ../include/Domain/Player.hpp
+ ../include/Domain/Ship.hpp
+ ../include/Domain/WeightEnum.hpp
+ ../include/Game.hpp
+ ../include/Helpers/Random.hpp
+ ../include/Helpers/Stack.hpp
+ ../include/Helpers/String.hpp
+ ../include/Helpers/Vector.hpp
+ ../include/States/BaseState.hpp
+ ../include/States/SellCannonsState.hpp
+ ../include/States/StateManager.hpp
+ /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o
  ../include/Distance.hpp
  ../include/Domain/Cannon.hpp

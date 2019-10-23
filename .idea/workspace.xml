@@ -12,34 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc7bd604-0115-4be1-a919-a0af529bb2d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/States/BuyShipState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PortRoyale.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PortRoyale.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/States/BuyCannonsState.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/States/SellCannonsState.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/States/SellCannonsState.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/afstand_tussen_steden.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/afstand_tussen_steden.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/goederen_hoeveelheid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/goederen_hoeveelheid.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/goederen_prijzen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/goederen_prijzen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/schepen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/schepen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortRoyaleMarijnHeutsV1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assets/afstand_tussen_steden.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assets/afstand_tussen_steden.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assets/goederen_hoeveelheid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assets/goederen_hoeveelheid.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assets/goederen_prijzen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assets/goederen_prijzen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assets/schepen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assets/schepen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/DependInfo.cmake" afterDir="false" />
@@ -47,12 +23,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/Game.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o" afterDir="false" />
@@ -60,46 +33,13 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PortRoyale.dir/src/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/PortRoyale.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/PortRoyale.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Distance.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Distance.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/Cannon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Cannon.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/Enemy.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Enemy.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/Goods.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Goods.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/GoodsType.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/GoodsType.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Domain/Harbour.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Harbour.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/HarbourName.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/HarbourName.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Player.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Domain/Ship.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/Ship.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Domain/WeightEnum.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Domain/WeightEnum.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Game.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/Map.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/Map.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/Random.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/Random.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/Reader.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/Reader.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/Stack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/Stack.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/String.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/String.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Helpers/Vector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Helpers/Vector.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/AtSeaState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/AtSeaState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/BaseState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/BaseState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/CombatState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/CombatState.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/States/HarbourState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/HarbourState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/InitState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/InitState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/SetSailState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/SetSailState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/States/StateManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/States/StateManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Harbour.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Harbour.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Ship.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Ship.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/AtSeaState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/AtSeaState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/CombatState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/CombatState.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/States/HarbourState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/HarbourState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/InitState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/InitState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/SetSailState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/SetSailState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,11 +75,11 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="__string" value="1" />
-          <entry key="cpp" value="258" />
+          <entry key="cpp" value="263" />
           <entry key="cstring" value="1" />
           <entry key="csv" value="2" />
           <entry key="h" value="5" />
-          <entry key="hpp" value="494" />
+          <entry key="hpp" value="498" />
           <entry key="istream" value="4" />
           <entry key="ostream" value="2" />
           <entry key="random" value="1" />
@@ -149,15 +89,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="18" />
-          <entry key="ObjectiveC" value="766" />
+          <entry key="ObjectiveC" value="775" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="11926" />
+          <entry key="cpp" value="13226" />
           <entry key="h" value="15" />
-          <entry key="hpp" value="11455" />
+          <entry key="hpp" value="12215" />
           <entry key="txt" value="168" />
         </counts>
       </usages-collector>
@@ -165,7 +105,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="168" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="23395" />
+          <entry key="ObjectiveC" value="25455" />
         </counts>
       </usages-collector>
     </session>
@@ -180,8 +120,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/States/BuyShipState.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="23" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="23" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
                   <folding>
                     <element signature="e#73#97#0" expanded="true" />
                   </folding>
@@ -189,7 +129,19 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/States/AtSeaState.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                  <folding>
+                    <element signature="e#119#148#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/States/BaseState.hpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -201,10 +153,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/Domain/Ship.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+                <state relative-caret-position="285">
+                  <caret line="75" selection-start-line="75" selection-end-line="75" />
                   <folding>
                     <element signature="e#107#136#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/States/BuyCannonsState.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="199">
+                  <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
+                  <folding>
+                    <element signature="e#49#86#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -214,7 +178,7 @@
             <entry file="file://$PROJECT_DIR$/include/States/CombatState.hpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="211">
-                  <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+                  <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
                   <folding>
                     <element signature="e#120#139#0" expanded="true" />
                   </folding>
@@ -225,20 +189,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/Domain/Player.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="321">
-                  <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Domain/Ship.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-96">
-                  <caret line="39" column="41" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#49#75#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="144">
+                  <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -247,7 +199,7 @@
             <entry file="file://$PROJECT_DIR$/include/Domain/Goods.hpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
-                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -264,20 +216,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/Domain/Harbour.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="227">
-                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                <state relative-caret-position="324">
+                  <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
                   <folding>
                     <element signature="e#112#141#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/Domain/HarbourName.hpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -286,11 +229,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/States/HarbourState.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="31" column="20" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="20" />
+                <state relative-caret-position="532">
+                  <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
                   <folding>
                     <element signature="e#122#151#0" expanded="true" />
                   </folding>
@@ -299,13 +242,73 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/States/CombatState.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/States/InitState.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/States/HarbourState.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+                <state relative-caret-position="67">
+                  <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
                   <folding>
-                    <element signature="e#50#84#0" expanded="true" />
+                    <element signature="e#49#83#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/States/BuyCannonsState.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                  <folding>
+                    <element signature="e#128#152#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/States/SellCannonsState.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#130#154#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/States/SellCannonsState.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/States/BuyShipState.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="6" />
                 </state>
               </provider>
             </entry>
@@ -318,27 +321,6 @@
                   <folding>
                     <element signature="e#113#136#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/Helpers/Random.hpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="44" selection-start-line="44" selection-end-line="44" />
-                  <folding>
-                    <element signature="e#109#128#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/Helpers/Reader.hpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
                 </state>
               </provider>
             </entry>
@@ -367,10 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Command/BaseCommand.hpp" />
-        <option value="$PROJECT_DIR$/Game.hpp" />
-        <option value="$PROJECT_DIR$/Game.cpp" />
-        <option value="$PROJECT_DIR$/Command/QuitCommand.cpp" />
         <option value="$PROJECT_DIR$/Domain/GoodsType.hpp" />
         <option value="$PROJECT_DIR$/Domain/HarbourName.hpp" />
         <option value="$PROJECT_DIR$/States/CombatState.hpp" />
@@ -404,10 +382,8 @@
         <option value="$PROJECT_DIR$/include/States/BaseState.hpp" />
         <option value="$PROJECT_DIR$/include/States/SetSailState.hpp" />
         <option value="$PROJECT_DIR$/src/Domain/Ship.cpp" />
-        <option value="$PROJECT_DIR$/include/Domain/Ship.hpp" />
         <option value="$PROJECT_DIR$/src/Game.cpp" />
         <option value="$PROJECT_DIR$/include/Helpers/Vector.hpp" />
-        <option value="$PROJECT_DIR$/include/Domain/Harbour.hpp" />
         <option value="$PROJECT_DIR$/src/Domain/Harbour.cpp" />
         <option value="$PROJECT_DIR$/include/States/BuyShipState.hpp" />
         <option value="$PROJECT_DIR$/include/Game.hpp" />
@@ -415,9 +391,15 @@
         <option value="$PROJECT_DIR$/src/States/BuyShipState.cpp" />
         <option value="$PROJECT_DIR$/include/Helpers/String.hpp" />
         <option value="$PROJECT_DIR$/include/Domain/Goods.hpp" />
-        <option value="$PROJECT_DIR$/include/States/HarbourState.hpp" />
-        <option value="$PROJECT_DIR$/src/States/HarbourState.cpp" />
         <option value="$PROJECT_DIR$/include/Helpers/Stack.hpp" />
+        <option value="$PROJECT_DIR$/include/States/HarbourState.hpp" />
+        <option value="$PROJECT_DIR$/include/Domain/Ship.hpp" />
+        <option value="$PROJECT_DIR$/include/States/BuyCannonsState.hpp" />
+        <option value="$PROJECT_DIR$/src/States/SellCannonsState.cpp" />
+        <option value="$PROJECT_DIR$/include/States/SellCannonsState.hpp" />
+        <option value="$PROJECT_DIR$/src/States/HarbourState.cpp" />
+        <option value="$PROJECT_DIR$/include/Domain/Harbour.hpp" />
+        <option value="$PROJECT_DIR$/src/States/BuyCannonsState.cpp" />
       </list>
     </option>
   </component>
@@ -431,7 +413,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="937" />
+    <option name="height" value="925" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -462,18 +444,18 @@
               <item name="PortRoyale" type="b2602c69:ProjectViewProjectNode" />
               <item name="PortRoyale" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PortRoyale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PortRoyale" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="States" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PortRoyale" type="b2602c69:ProjectViewProjectNode" />
               <item name="PortRoyale" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortRoyale" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortRoyale" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="States" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PortRoyale" type="b2602c69:ProjectViewProjectNode" />
@@ -566,12 +548,12 @@
       <workItem from="1568721916088" duration="11470000" />
       <workItem from="1570099431256" duration="3451000" />
       <workItem from="1570712426149" duration="5154000" />
-      <workItem from="1571145669504" duration="27094000" />
+      <workItem from="1571145669504" duration="31801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165666000" />
+    <option name="totallyTimeSpent" value="170373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,7 +565,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="937" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="925" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.17704518" />
@@ -591,7 +573,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50076103" side_tool="true" weight="0.23992674" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289941" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46764347" visible="true" weight="0.41420117" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46764347" visible="true" weight="0.42016807" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4884005" weight="0.44852072" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,7 +583,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.54090357" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32971016" />
       <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4969475" weight="0.22551021" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.45909646" weight="0.4366864" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.45909646" weight="0.4357743" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -615,16 +597,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__string">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="216" selection-start-line="216" selection-end-line="216" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Command/InputCommand.cpp" />
-    <entry file="file://$PROJECT_DIR$/Command/BaseCommand.hpp" />
-    <entry file="file://$PROJECT_DIR$/Command/InputCommand.hpp" />
     <entry file="file://$PROJECT_DIR$/Command/QuitCommand.hpp" />
     <entry file="file://$PROJECT_DIR$/Command/QuitCommand.cpp" />
     <entry file="file://$PROJECT_DIR$/Assets/schepen.csv">
@@ -723,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/States/InitState.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -758,16 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/States/AtSeaState.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#119#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/States/InitState.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -789,13 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="46" column="39" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/States/CombatState.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-666">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -830,49 +778,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/States/BuyShipState.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding>
-            <element signature="e#49#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain/Ship.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96">
           <caret line="39" column="41" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="e#49#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Domain/Cannon.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Domain/Harbour.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#112#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/States/HarbourState.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding>
-            <element signature="e#50#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -921,54 +832,7 @@
     <entry file="file://$PROJECT_DIR$/include/Domain/Goods.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Domain/Player.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Domain/Ship.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-          <folding>
-            <element signature="e#107#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/States/CombatState.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="e#120#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/States/HarbourState.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="e#122#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/States/BuyShipState.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#73#97#0" expanded="true" />
-          </folding>
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -976,6 +840,148 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/CombatState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#120#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/InitState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/AtSeaState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#119#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Domain/Cannon.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Domain/Player.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Domain/Ship.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#107#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BuyShipState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/SellCannonsState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/SellCannonsState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#130#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/CombatState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/HarbourState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#49#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/BuyShipState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#73#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/HarbourState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="e#122#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/States/BuyCannonsState.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#128#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Domain/Harbour.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding>
+            <element signature="e#112#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BuyCannonsState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
+          <folding>
+            <element signature="e#49#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

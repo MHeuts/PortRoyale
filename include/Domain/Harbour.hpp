@@ -41,12 +41,26 @@ private:
     Goods _goods[15];
     Distance _distances[24];
     Vector<Ship> _availableShips;
+    int _availibleLightCannons;
+    int _availableMediumCannons;
+    int _availableHeavyCannons;
 
 public:
     String GetName() const { return _name; }
     Distance GetDistance(int i) const { return _distances[i]; }
 
     Vector<Ship> GetAvailableShips() { return _availableShips; }
+
+    void SetCannonStock(int light, int medium, int heavy){
+        _availibleLightCannons = light;
+        _availableMediumCannons = medium;
+        _availableHeavyCannons = heavy;
+    }
+
+    int GetLightCannonsAvailable(){ return _availibleLightCannons; }
+    int GetMediumCannonsAvailable(){ return _availableMediumCannons; }
+    int GetHeavyCannonsAvailable(){ return _availableHeavyCannons; }
+
 
     void AddToShips(int i, Ship ship);
     void GeneratePrices();

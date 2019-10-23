@@ -70,6 +70,10 @@ public:
     int LostHitpoints() const { return _maxHitPoints - _currentHitPoints; }
     int GetSellPrice() const { return _price/2; }
     int GetPrice() const { return _price; }
+    int GetSmallCannons() const { return _smallCannonAmount; }
+    int GetMediumCannons() const { return _mediumCannonAmount; }
+    int GetHeavyCannons() const { return _heavyCannonAmount; }
+
 
     bool IsDestroyed() const { return _currentHitPoints <= 0; }
     bool IsLog() const { return _weight == Heavy; }

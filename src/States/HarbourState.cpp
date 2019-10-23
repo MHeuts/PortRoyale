@@ -2,10 +2,11 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
-
 #include "States/SetSailState.hpp"
 #include "States/HarbourState.hpp"
 #include "States/BuyShipState.hpp"
+#include "States/BuyCannonsState.hpp"
+#include <States/SellCannonsState.hpp>
 
 void HarbourState::EnterState() {
     std::cout << "Welcome to " << _game->GetCurrentHarbour().GetName() << "\n";
@@ -33,10 +34,10 @@ void HarbourState::HandleInput() {
         std::cout << "Market is still closed\n";
     } else if (input == "Sell Goods") {
         std::cout << "Market is still closed\n";
-    } else if (input == "buy cannons") {
-        std::cout << "Market is still closed\n";
-    } else if (input == "sell cannons") {
-        std::cout << "Market is still closed\n";
+    } else if (input == "Buy Cannons") {
+        _game->StateHandler().push_state<BuyCannonsState>(_game);
+    } else if (input == "Sell Cannons") {
+        _game->StateHandler().push_state<SellCannonsState>(_game);
     } else if (input == "Buy Ship") {
         _game->StateHandler().push_state<BuyShipState>(_game);
     } else if (input == "Repair Ship"){
@@ -74,6 +75,17 @@ void HarbourState::generateHarbour() {
     for (int i = 0; i < 5; ++i) {
         _game->GetCurrentHarbour().AddToShips(i, _game->getShip(Random::GetInstance().GetRandom(13)));
     }
+
+    setCannonStock();
+
     _game->GetCurrentHarbour().GeneratePrices();
+}
+
+void HarbourState::setCannonStock() {
+    int light = Random::GetInstance().GetRandom(5);
+    int medium = Random::GetInstance().GetRandom(3);
+    int heavy = Random::GetInstance().GetRandom(2);
+
+    _game->GetCurrentHarbour().SetCannonStock(light, medium, heavy);
 }
 

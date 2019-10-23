@@ -285,6 +285,33 @@ src/States/AtSeaState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.s
 .PHONY : src/States/AtSeaState.cpp.s
 
+src/States/BuyCannonsState.o: src/States/BuyCannonsState.cpp.o
+
+.PHONY : src/States/BuyCannonsState.o
+
+# target to build an object file
+src/States/BuyCannonsState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o
+.PHONY : src/States/BuyCannonsState.cpp.o
+
+src/States/BuyCannonsState.i: src/States/BuyCannonsState.cpp.i
+
+.PHONY : src/States/BuyCannonsState.i
+
+# target to preprocess a source file
+src/States/BuyCannonsState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.i
+.PHONY : src/States/BuyCannonsState.cpp.i
+
+src/States/BuyCannonsState.s: src/States/BuyCannonsState.cpp.s
+
+.PHONY : src/States/BuyCannonsState.s
+
+# target to generate assembly for a file
+src/States/BuyCannonsState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.s
+.PHONY : src/States/BuyCannonsState.cpp.s
+
 src/States/BuyShipState.o: src/States/BuyShipState.cpp.o
 
 .PHONY : src/States/BuyShipState.o
@@ -393,6 +420,33 @@ src/States/InitState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.s
 .PHONY : src/States/InitState.cpp.s
 
+src/States/SellCannonsState.o: src/States/SellCannonsState.cpp.o
+
+.PHONY : src/States/SellCannonsState.o
+
+# target to build an object file
+src/States/SellCannonsState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o
+.PHONY : src/States/SellCannonsState.cpp.o
+
+src/States/SellCannonsState.i: src/States/SellCannonsState.cpp.i
+
+.PHONY : src/States/SellCannonsState.i
+
+# target to preprocess a source file
+src/States/SellCannonsState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.i
+.PHONY : src/States/SellCannonsState.cpp.i
+
+src/States/SellCannonsState.s: src/States/SellCannonsState.cpp.s
+
+.PHONY : src/States/SellCannonsState.s
+
+# target to generate assembly for a file
+src/States/SellCannonsState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.s
+.PHONY : src/States/SellCannonsState.cpp.s
+
 src/States/SetSailState.o: src/States/SetSailState.cpp.o
 
 .PHONY : src/States/SetSailState.o
@@ -474,6 +528,9 @@ help:
 	@echo "... src/States/AtSeaState.o"
 	@echo "... src/States/AtSeaState.i"
 	@echo "... src/States/AtSeaState.s"
+	@echo "... src/States/BuyCannonsState.o"
+	@echo "... src/States/BuyCannonsState.i"
+	@echo "... src/States/BuyCannonsState.s"
 	@echo "... src/States/BuyShipState.o"
 	@echo "... src/States/BuyShipState.i"
 	@echo "... src/States/BuyShipState.s"
@@ -486,6 +543,9 @@ help:
 	@echo "... src/States/InitState.o"
 	@echo "... src/States/InitState.i"
 	@echo "... src/States/InitState.s"
+	@echo "... src/States/SellCannonsState.o"
+	@echo "... src/States/SellCannonsState.i"
+	@echo "... src/States/SellCannonsState.s"
 	@echo "... src/States/SetSailState.o"
 	@echo "... src/States/SetSailState.i"
 	@echo "... src/States/SetSailState.s"

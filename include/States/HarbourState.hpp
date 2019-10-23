@@ -34,6 +34,9 @@ private:
     bool shipInavailibleList(String Shipname);
 
     void generateHarbour();
+    void setShipStock();
+    void setCannonStock();
+    void setgoodsStock();
 };
 
 

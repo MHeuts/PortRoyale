@@ -1,0 +1,8 @@
+//
+// Created by Marijn Heuts on 23/10/2019.
+//
+
+#ifndef PORTROYALE_BUYGOODSSTATE_HPP
+#define PORTROYALE_BUYGOODSSTATE_HPP
+
+#endif //PORTROYALE_BUYGOODSSTATE_HPP
