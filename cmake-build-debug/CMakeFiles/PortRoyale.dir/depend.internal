@@ -17,6 +17,7 @@ CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp
 CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o
  ../include/Domain/Cannon.hpp
+ ../include/Domain/Goods.hpp
  ../include/Domain/Player.hpp
  ../include/Domain/Ship.hpp
  ../include/Domain/WeightEnum.hpp

@@ -40,6 +40,7 @@ void Game::setUp(){
     buildShipRepo();
     buildHarbourRepo();
     setHarbourDestinations();
+    setHarbourGoods();
 
     _player.ReceiveGold(1000000);
     _player.SetShip(shipRepository[0]);
@@ -227,3 +228,32 @@ void Game::buildHarbourDestinations(String line, int i) {
         harbourRepository[i].SetDistance(j-1, atoi((char*)items[j]), harbourRepository[j-1].GetName());
     }
 }
+
+void Game::setHarbourGoods() {
+    std::ifstream stream{"Assets/goederen_hoeveelheid.csv"};
+    char line[500];
+    if(!stream.is_open()){
+        std::cout << "file not found\n";
+        exit(1);
+    }
+    int linenr{-4};
+
+    String names[24];
+    while(stream.getline(line, 500, '\n')){
+        if(linenr < 0){
+            linenr++;
+            continue;
+        }
+
+        String linestr(line);
+
+        buildHarbourGoods(linestr, linenr);
+
+        linenr++;
+    }
+}
+
+void Game::buildHarbourGoods(String linestr, int linenr) {
+
+}
+

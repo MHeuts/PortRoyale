@@ -61,6 +61,10 @@ public:
     int GetMediumCannonsAvailable(){ return _availableMediumCannons; }
     int GetHeavyCannonsAvailable(){ return _availableHeavyCannons; }
 
+    bool CheckCannonAvailibility(WeightEnum size);
+
+    void DecreaseCannonAmount(WeightEnum size);
+
 
     void AddToShips(int i, Ship ship);
     void GeneratePrices();

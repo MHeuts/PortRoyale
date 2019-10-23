@@ -73,7 +73,7 @@ public:
     int GetSmallCannons() const { return _smallCannonAmount; }
     int GetMediumCannons() const { return _mediumCannonAmount; }
     int GetHeavyCannons() const { return _heavyCannonAmount; }
-
+    int GetCargoSpace() const { return _cargoSpace; }
 
     bool IsDestroyed() const { return _currentHitPoints <= 0; }
     bool IsLog() const { return _weight == Heavy; }

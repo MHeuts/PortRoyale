@@ -24,7 +24,6 @@ void SetSailState::HandleInput() {
         _game->StateHandler().ReturnToPreviousState();
     } else if (isDestination(input)){
     } else{
-//        _game->StateHandler().push_state<AtSeaState>(_game, 10);
         std::cout << "invalid Input \n";
     }
 }
@@ -32,8 +31,8 @@ void SetSailState::HandleInput() {
 bool SetSailState::isDestination(String input) {
     for (int i = 0; i < 24; ++i) {
         if(input == _game->GetCurrentHarbour().GetDistance(i).GetName()){
-            _game->SetCurrentHarbour(_game->getHarbour(i));
             _game->StateHandler().push_state<AtSeaState>(_game, _game->GetCurrentHarbour().GetDistance(i).GetDistance());
+            _game->SetCurrentHarbour(_game->getHarbour(i));
             return true;
         }
     }

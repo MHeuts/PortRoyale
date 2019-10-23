@@ -23,6 +23,9 @@ public:
 
 private:
     Game* _game;
+
+    WeightEnum Size;
+    int price;
 };
 
 

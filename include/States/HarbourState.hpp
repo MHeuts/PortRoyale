@@ -28,15 +28,11 @@ private:
     void repairShip();
     void BuyGoods();
     void SellGoods();
-    void BuyCannons();
-    void SellCannons();
-
-    bool shipInavailibleList(String Shipname);
 
     void generateHarbour();
     void setShipStock();
     void setCannonStock();
-    void setgoodsStock();
+    void setGoodsStock();
 };
 
 

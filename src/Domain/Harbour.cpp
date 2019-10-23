@@ -36,3 +36,39 @@ void Harbour::AddToShips(int i, Ship ship) {
     _availableShips.push_back(ship);
 }
 
+void Harbour::DecreaseCannonAmount(WeightEnum size) {
+    switch(size) {
+        case Light:
+            --_availibleLightCannons;
+            break;
+        case Normal:
+            --_availableMediumCannons;
+            break;
+        case Heavy:
+            --_availableHeavyCannons;
+            break;
+        default:
+            return;
+    }
+}
+
+bool Harbour::CheckCannonAvailibility(WeightEnum size) {
+    switch(size){
+        case Light:
+            if(_availibleLightCannons > 0)
+                return true;
+            break;
+        case Normal:
+            if(_availableMediumCannons > 0)
+                return true;
+            break;
+        case Heavy:
+            if(_availableMediumCannons > 0)
+                return false;
+            break;
+        default:
+            return false;
+    }
+    return false;
+}
+
