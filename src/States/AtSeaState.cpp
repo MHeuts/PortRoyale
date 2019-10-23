@@ -23,7 +23,7 @@ void AtSeaState::Update() {
     _weatherEffect(Random::GetInstance().GetRandom(20));
     if(_turnsLeft <= 0){
         std::cout << "Arrived at port\n";
-        _game->StateHandler().push_state<InitState>(_game);
+        _game->StateHandler().push_state<HarbourState>(_game);
     }
     else {
         std::cout << "turns until in port: " << _turnsLeft <<"\n";

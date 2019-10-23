@@ -3,8 +3,6 @@
 //
 
 #include <States/AtSeaState.hpp>
-#include <States/InitState.hpp>
-
 #include "States/InitState.hpp"
 
 void InitState::EnterState() {
@@ -24,5 +22,7 @@ void InitState::HandleInput() {
 }
 
 void InitState::ShowOptions() {
-    std::cout << "Options: \n Start\n Quit\n";
+    std::cout << "Options: \n"
+                 " Start\n"
+                 " Quit\n";
 }

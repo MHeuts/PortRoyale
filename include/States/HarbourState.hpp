@@ -6,13 +6,37 @@
 #define PORTROYALE_HARBOURSTATE_HPP
 
 #include "Domain/Harbour.hpp"
+#include "BaseState.hpp"
+#include "InitState.hpp"
 
-class HarbourState {
+class HarbourState: public BaseState {
 public:
-    HarbourState();
 
+    HarbourState(Game* game): _game{game} { }
+
+    ~HarbourState() override = default;
+
+    void EnterState() override;
+    void LeaveState() override { };
+
+    void ShowOptions() override;
+    void HandleInput() override;
+    void Update() override {};
 private:
-    Harbour currentHarbour;
+    Game* _game;
+
+    void repairShip();
+    void BuyGoods();
+    void SellGoods();
+    void BuyCannons();
+    void SellCannons();
+
+    bool shipInavailibleList(String Shipname);
+
+    void generateHarbour();
+    void setShipStock();
+    void setCannonStock();
+    void setgoodsStock();
 };
 
 

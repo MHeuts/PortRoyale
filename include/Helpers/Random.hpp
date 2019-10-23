@@ -35,9 +35,8 @@ public:
 
 private:
     std::default_random_engine generator;
-
     Random(){
-        generator.seed(time(0));
+        generator.seed(static_cast<unsigned long>(time(nullptr)));
     }
 };
 

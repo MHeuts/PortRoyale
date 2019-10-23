@@ -47,9 +47,8 @@
 					<Add directory="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
@@ -70,9 +69,8 @@
 					<Add directory="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
@@ -102,6 +100,12 @@
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyShipState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
@@ -109,6 +113,12 @@
 			<Option target="PortRoyale"/>
 		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp">

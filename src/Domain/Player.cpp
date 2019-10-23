@@ -4,7 +4,3 @@
 
 #include "Domain/Player.hpp"
 
-
-void Player::LooseAllCargo() {
-
-}

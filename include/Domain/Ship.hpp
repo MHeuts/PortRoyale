@@ -7,66 +7,46 @@
 
 
 #include <Helpers/String.hpp>
+#include <utility>
 #include "WeightEnum.hpp"
 #include "Cannon.hpp"
 
 class Ship {
 public:
     Ship() = default;
-    Ship(const Ship& other) {
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
-    }
+    Ship(const Ship& other) :   _name{other._name},
+                                _price{other._price},
+                                _cargoSpace{other._cargoSpace},
+                                _cannonSpace{other._cannonSpace},
+                                _maxHitPoints{other._maxHitPoints},
+                                _currentHitPoints{other._currentHitPoints},
+                                _isSmall{other._isSmall},
+                                _weight{other._weight} { }
 
-    Ship(Ship&&) = delete;
-    Ship& operator = (const Ship& other) {
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
+    Ship(Ship&& other) noexcept :   _name{other._name},
+                                    _price{other._price},
+                                    _cargoSpace{other._cargoSpace},
+                                    _cannonSpace{other._cannonSpace},
+                                    _maxHitPoints{other._maxHitPoints},
+                                    _currentHitPoints{other._currentHitPoints},
+                                    _isSmall{other._isSmall},
+                                    _weight{other._weight} { }
 
-        return *this;
-    }
-    Ship& operator = (Ship&& other){
-        if(this != &other){
-            _name = other._name;
-            _price = other._price;
-            _cargoSpace = other._cargoSpace;
-            _maxHitPoints = other._maxHitPoints;
-            _currentHitPoints = other._currentHitPoints;
-            _cannonSpace = other._cannonSpace;
-            _isSmall = other._isSmall;
-            _weight = other._weight;
-        }
-
-        return *this;
-    }
+    Ship& operator = (const Ship& other);
+    Ship& operator = (Ship&& other) noexcept;
+    ~Ship() = default;
 
 private:
-    String _name;
-    int _price;
-    int _maxHitPoints;
-    int _cargoSpace;
-    int _cannonSpace;
+    String _name { };
+    int _price {0};
+    int _maxHitPoints {0};
+    int _cargoSpace {0};
+    int _cannonSpace {0};
     bool _isSmall {false};
     WeightEnum _weight {Normal};
 
 public:
-    void SetName(String name) { _name = name; }
+    void SetName(String name) { _name = std::move(name); }
     void SetPrice(int price) { _price = price; }
     void SetHitPoints(int hitpoints) { _maxHitPoints = hitpoints;
                                         _currentHitPoints = _maxHitPoints; }
@@ -75,7 +55,7 @@ public:
     void SetSmall(bool isSmall) { _isSmall = isSmall; }
     void SetWeight(WeightEnum weight) { _weight = weight; }
 
-    const String GetName() { return _name; }
+    String GetName() const { return _name; }
 
 private:
     int _smallCannonAmount {0};
@@ -84,18 +64,26 @@ private:
     int _currentHitPoints {0};
 
 public:
-    void GenerateValues(String type);
-    int GetCurrentHitPoints() { return _currentHitPoints; }
-    bool IsDestroyed() { return _currentHitPoints <= 0; }
-    void Repair();
-    int TotalCannonAmount() { return _smallCannonAmount+_mediumCannonAmount+_heavyCannonAmount; }
-    int FreeCannonSpace() { return _cannonSpace - TotalCannonAmount(); }
-    bool IsLog();
-    bool IsLight();
-    bool IsSmall();
+    int GetCurrentHitPoints() const { return _currentHitPoints; }
+    int TotalCannonAmount() const { return _smallCannonAmount+_mediumCannonAmount+_heavyCannonAmount; }
+    int FreeCannonSpace() const { return _cannonSpace - TotalCannonAmount(); }
+    int LostHitpoints() const { return _maxHitPoints - _currentHitPoints; }
+    int GetSellPrice() const { return _price/2; }
+    int GetPrice() const { return _price; }
+    int GetSmallCannons() const { return _smallCannonAmount; }
+    int GetMediumCannons() const { return _mediumCannonAmount; }
+    int GetHeavyCannons() const { return _heavyCannonAmount; }
+
+
+    bool IsDestroyed() const { return _currentHitPoints <= 0; }
+    bool IsLog() const { return _weight == Heavy; }
+    bool IsLight() const { return _weight == Light; }
+    bool IsSmall() const { return _isSmall; }
 
     void AddCannon(WeightEnum weight);
     void RemoveCannon(WeightEnum weight);
+
+    void Repair(int repairPoints);
 
     void ReceiveDamage(int Damage);
     int GetDamageOutput();

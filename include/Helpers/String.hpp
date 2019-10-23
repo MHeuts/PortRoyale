@@ -5,30 +5,26 @@
 #ifndef PORTROYALE_STRING_HPP
 #define PORTROYALE_STRING_HPP
 
+#include <cstring>
 #include <iostream>
+#include <Helpers/Vector.hpp>
 class String{
 
 public:
     String() :string_{nullptr}, length_{0} { };
 
-    String(const char* other): string_{new char[length_]}, length_{stringLength(other)} {
+    String(const char* other) : string_{new char[length_]},
+                                length_{stringLength(other)} {
         strcpy(string_, other);
     };
 
-    String(const String& other): string_{new char[length_]}, length_{other.length_} {
+    String(const String& other) :   string_{new char[other.length_ + 1]},
+                                    length_{other.length_} {
         strcpy(string_, other.string_);
     };
 
     String(String&& other) {
         other.string_ = nullptr;
-    };
-
-    ~String(){
-        delete[] string_;
-    };
-
-    operator char*() const {
-        return string_;
     };
 
     String& operator = (const char* other) {
@@ -43,7 +39,7 @@ public:
 
     String& operator = (const String& other) {
         if (this != &other){
-            length_ = stringLength(other);
+            length_ = stringLength(other.string_);
             delete[] string_;
             string_ = new char[length_];
             strcpy(string_, other.string_);
@@ -57,7 +53,7 @@ public:
 
         delete[] string_;
 
-        length_ = stringLength(other);
+        length_ = stringLength(other.string_);
 
         string_ = new char[length_];
         strcpy(string_, other.string_);
@@ -65,23 +61,23 @@ public:
         return *this;
     };
 
-    bool operator == (const char* other) {
-        if(length_ != stringLength(other))
-            return false;
+    ~String(){
+        delete[] string_;
+    };
 
-        for (int i = 0; i < length_; ++i) {
-            if(string_[i] != other[i])
-                return false;
-        }
-        return true;
+    operator char*() const {
+        return string_;
+    };
+
+
+    bool operator == (const char* other) {
+        return strcmp(string_, other) == 0;
+
     };
 
     bool operator == (const String& other) {
-        if(length_ != other.length_){
-            return false;
-        }
         for(int i =0; i <= length_; i++){
-            if(string_[i] != other[i]){
+            if(string_[i] != other.string_[i]){
                 return false;
             }
         }
@@ -89,7 +85,7 @@ public:
     };
 
     String& operator +=(const String& other) {
-        auto newLength = length_ + stringLength(other);
+        auto newLength = length_ + stringLength(other.string_);
 
         char* temp = new char[newLength];
 
@@ -97,7 +93,7 @@ public:
             temp[j] = string_[j];
 
         for (unsigned i=0; i < other.length_; i++)
-            temp[length_+i] = other[i];
+            temp[length_+i] = other.string_[i];
 
         delete[] string_;
         length_ = newLength;
@@ -105,19 +101,27 @@ public:
         return *this;
     };
 
-    String&operator += (const char other){
-        auto newLength = length_ +1;
+    String &operator += (const char* other){
+        auto newLength = length_ + strlen(other);
+
         char temp[newLength];
 
         for (int i = 0;i< length_; ++i){
             temp[i] = string_[i];
         }
-        temp[length_] = other;
+
+        strcat(temp, other);
         delete[] string_;
+
+
         length_= newLength;
         string_ = temp;
 
         return *this;
+    }
+
+    char &operator [] (int i){
+        return string_[i];
     }
 
     friend std::ostream& operator <<(std::ostream& os, const String& other) {
@@ -126,29 +130,23 @@ public:
     };
 
     friend std::istream& operator >>(std::istream& is, String& other) {
-        char* temp = new char[1000];
-        is >> temp;
-        other = String(temp);
-        delete[] temp;
+        Vector<char> temp;
+
+        while(is.good()) {
+            char c;
+            is.get(c);
+            if (c == '\0' || c == '\n') break;
+            temp.push_back(c);
+        }
+        other.length_ = temp.Size();
+        other.string_ = new char[other.length_ + 1];
+        for (int i = 0; i < other.length_; i++) {
+            other.string_[i] = temp[i];
+        }
+        other.string_[other.length_] = '\0';
 
         return is;
     };
-
-    String Split(char symbol){
-
-        int index{0};
-        String part{""};
-
-        while (index < length_) {
-            if (string_[index] == symbol) {
-                break;
-            } else {
-                part += string_[index];
-            }
-            ++index;
-        }
-        return part;
-    }
 
 private:
 
@@ -163,4 +161,5 @@ private:
         return ++result;
     };
 };
+
 #endif //PORTROYALE_STRING_HPP

@@ -27,14 +27,22 @@ public:
     StateManager &StateHandler() { return stateManager; }
     Player &player() { return  _player; }
     Ship getShip(int i) { return shipRepository[i]; }
+    Harbour &GetCurrentHarbour() { return _currentHarbour; }
+    Harbour getHarbour(int i) { return harbourRepository[i]; }
 
+    void SetCurrentHarbour(Harbour harbour) { _currentHarbour = harbour; }
 private:
     void setUp();
     void buildShipRepo();
     void buildHarbourRepo();
     void buildShip(char* line, int i);
+    void buildHarbour(char* line, int i);
     Ship shipRepository[13];
     Harbour harbourRepository[24];
+
+    void setHarbourDestinations();
+
+    void buildHarbourDestinations(String line, int i);
 };
 
 

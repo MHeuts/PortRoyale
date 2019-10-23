@@ -11,7 +11,7 @@ class InitState: public BaseState{
 public:
     explicit InitState(Game* game): _game{game}{ }
 
-    ~InitState() = default;
+    ~InitState() override = default;
     void EnterState() override;
     void LeaveState() override {};
 

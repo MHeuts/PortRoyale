@@ -3,18 +3,9 @@
 //
 
 #include <Domain/Ship.hpp>
+
 #include "Helpers/Random.hpp"
 #include "Domain/Ship.hpp"
-
-void Ship::GenerateValues(String shipType) {
-    _maxHitPoints = 100;
-    _currentHitPoints = _maxHitPoints;
-    _cargoSpace = 200;
-    _cannonSpace = 8;
-    _weight = WeightEnum(Light);
-    _isSmall = true;
-    _name = shipType;
-}
 
 void Ship::ReceiveDamage(int damage) {
     _currentHitPoints -= damage;
@@ -32,18 +23,6 @@ int Ship::GetDamageOutput(){
         totalDamage+=Random::GetInstance().GetRandom(4);
     }
     return totalDamage;
-}
-
-bool Ship::IsLog() {
-    return _weight == Heavy;
-}
-
-bool Ship::IsLight() {
-    return _weight == Light;
-}
-
-bool Ship::IsSmall() {
-    return _isSmall;
 }
 
 void Ship::AddCannon(WeightEnum weight) {
@@ -67,6 +46,33 @@ void Ship::RemoveCannon(WeightEnum weight) {
         --_heavyCannonAmount;
 }
 
-void Ship::Repair() {
-    _currentHitPoints = _maxHitPoints;
+void Ship::Repair(int repairPoints) {
+    _currentHitPoints += repairPoints;
+    if(_currentHitPoints >= _maxHitPoints) _currentHitPoints = _maxHitPoints;
+}
+
+Ship &Ship::operator=(const Ship &other) {
+    if(this == &other) return *this;
+    _name = other._name;
+    _price = other._price;
+    _cargoSpace = other._cargoSpace;
+    _maxHitPoints = other._maxHitPoints;
+    _currentHitPoints = other._currentHitPoints;
+    _cannonSpace = other._cannonSpace;
+    _isSmall = other._isSmall;
+    _weight = other._weight;
+    return *this;
+}
+
+Ship &Ship::operator=(Ship &&other) noexcept{
+    if(this == &other) return *this;
+    _name = other._name;
+    _price = other._price;
+    _cargoSpace = other._cargoSpace;
+    _maxHitPoints = other._maxHitPoints;
+    _currentHitPoints = other._currentHitPoints;
+    _cannonSpace = other._cannonSpace;
+    _isSmall = other._isSmall;
+    _weight = other._weight;
+    return *this;
 }

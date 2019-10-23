@@ -3,3 +3,10 @@
 //
 
 #include "Domain/Enemy.hpp"
+
+class StringBuilder{
+
+public:
+
+private:
+};

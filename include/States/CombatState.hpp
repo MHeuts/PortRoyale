@@ -13,7 +13,7 @@ class CombatState :public BaseState{
 public:
     explicit CombatState(Game* game): _game{game}{ }
 
-    ~CombatState() = default;
+    ~CombatState() override { }
     void EnterState() override;
     void LeaveState() override {};
 
