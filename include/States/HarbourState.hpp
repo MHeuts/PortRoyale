@@ -30,9 +30,7 @@ private:
     void SellGoods();
 
     void generateHarbour();
-    void setShipStock();
     void setCannonStock();
-    void setGoodsStock();
 };
 
 

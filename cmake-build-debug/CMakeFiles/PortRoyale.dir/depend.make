@@ -4,6 +4,12 @@
 CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o: ../include/Domain/Enemy.hpp
 CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o: ../src/Domain/Enemy.cpp
 
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../include/Domain/Goods.hpp
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../include/Helpers/Random.hpp
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../include/Helpers/String.hpp
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../include/Helpers/Vector.hpp
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../src/Domain/Goods.cpp
+
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o: ../include/Distance.hpp
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o: ../include/Domain/Cannon.hpp
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o: ../include/Domain/Goods.hpp
@@ -87,6 +93,8 @@ CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: ../include/States/Bu
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: ../include/States/BuyShipState.hpp
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: ../include/States/StateManager.hpp
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: ../src/States/BuyCannonsState.cpp
+
+CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o: ../src/States/BuyGoodsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o: ../include/Distance.hpp
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o: ../include/Domain/Cannon.hpp
@@ -179,6 +187,8 @@ CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: ../include/States/B
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: ../include/States/SellCannonsState.hpp
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: ../include/States/StateManager.hpp
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: ../src/States/SellCannonsState.cpp
+
+CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o: ../src/States/SellGoodsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Distance.hpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../include/Domain/Cannon.hpp

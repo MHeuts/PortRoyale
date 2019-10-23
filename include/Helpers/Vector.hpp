@@ -13,7 +13,6 @@ private:
     T* data_;
 
 
-
 public:
     Vector(): size_{0},
                 capacity_{10},
@@ -33,7 +32,7 @@ public:
 
     Vector(Vector&& other): size_{other.size_},
                                 capacity_{other.capacity_},
-                                data_{new T*[other.capacity_]}{
+                                data_{new T[other.capacity_]}{
 
         for (int i = 0; i < size_; ++i) {
             data_[i] = other[i];
@@ -116,7 +115,7 @@ public:
 
     void Clear() {
         delete[] data_;
-        data_ = new T*[capacity_];
+        data_ = new T[capacity_];
     };
 
 private:

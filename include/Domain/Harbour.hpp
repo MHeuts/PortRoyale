@@ -67,10 +67,13 @@ public:
 
 
     void AddToShips(int i, Ship ship);
-    void GeneratePrices();
+    void RandomizeGoods();
 
     void SetName(String name) { _name = name; }
     void SetDistance(int i, int distance, String name);
+    void SetGoodName(int i, String name);
+    void SetGoodPrices(int i, int minPrice, int maxPrice);
+    void SetGoodAvailability(int i, int minAvailablity, int maxAvailability);
 };
 
 

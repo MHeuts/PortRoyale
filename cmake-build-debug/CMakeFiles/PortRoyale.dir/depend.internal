@@ -4,6 +4,12 @@
 CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o
  ../include/Domain/Enemy.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp
+CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o
+ ../include/Domain/Goods.hpp
+ ../include/Helpers/Random.hpp
+ ../include/Helpers/String.hpp
+ ../include/Helpers/Vector.hpp
+ /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Goods.cpp
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o
  ../include/Distance.hpp
  ../include/Domain/Cannon.hpp
@@ -88,6 +94,8 @@ CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o
  ../include/States/BuyShipState.hpp
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp
+CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o
+ /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyGoodsState.cpp
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o
  ../include/Distance.hpp
  ../include/Domain/Cannon.hpp
@@ -180,6 +188,8 @@ CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o
  ../include/States/SellCannonsState.hpp
  ../include/States/StateManager.hpp
  /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp
+CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o
+ /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellGoodsState.cpp
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o
  ../include/Distance.hpp
  ../include/Domain/Cannon.hpp

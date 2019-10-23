@@ -17,6 +17,8 @@ private:
     StateManager stateManager;
     Player _player;
     Harbour _currentHarbour;
+    Ship shipRepository[13];
+    Harbour harbourRepository[24];
 
 public:
     Game();
@@ -32,21 +34,26 @@ public:
 
     void SetCurrentHarbour(Harbour harbour) { _currentHarbour = harbour; }
 private:
+
     void setUp();
     void buildShipRepo();
-    void buildHarbourRepo();
     void buildShip(char* line, int i);
+
+    void buildHarbourRepo();
     void buildHarbour(char* line, int i);
-    Ship shipRepository[13];
-    Harbour harbourRepository[24];
+
 
     void setHarbourDestinations();
-
     void buildHarbourDestinations(String line, int i);
 
     void setHarbourGoods();
+    void buildHarbourGoods(String linestr);
 
-    void buildHarbourGoods(String linestr, int linenr);
+    void setHarbourGoodsStock();
+    void buildHarbourGoodsStock(String linestr, int linenr);
+
+    void setHarbourGoodsPrices();
+    void buildHarbourGoodsPrices(String linestr, int linenr);
 };
 
 

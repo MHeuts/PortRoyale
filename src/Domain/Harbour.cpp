@@ -2,9 +2,6 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
-
-#include <Domain/Harbour.hpp>
-
 #include "Domain/Harbour.hpp"
 
 void Harbour::SetDistance(int i, int distance, String name) {
@@ -15,7 +12,7 @@ void Harbour::SetDistance(int i, int distance, String name) {
 Harbour &Harbour::operator=(const Harbour &other) {
     if(this == &other) return *this;
     _name = other._name;
-//    for (int i = 0; i < 15; ++i) _goods[i] = other._goods[i];
+    for (int i = 0; i < 15; ++i) _goods[i] = other._goods[i];
     for (int j = 0; j < 24; ++j) _distances[j] = other._distances[j];
     return *this;
 }
@@ -23,13 +20,16 @@ Harbour &Harbour::operator=(const Harbour &other) {
 Harbour &Harbour::operator=(Harbour &&other) noexcept {
     if(this == &other) return *this;
     _name = other._name;
-//    for (int i = 0; i < 15; ++i) _goods[i] = other._goods[i];
+    for (int i = 0; i < 15; ++i) _goods[i] = other._goods[i];
     for (int j = 0; j < 24; ++j) _distances[j] = other._distances[j];
     return *this;
 }
 
-void Harbour::GeneratePrices() {
-
+void Harbour::RandomizeGoods() {
+    for (int i = 0; i < 15; ++i) {
+        _goods[i].randomizeAmmount();
+        _goods[i].randomizePrice();
+    }
 }
 
 void Harbour::AddToShips(int i, Ship ship) {
@@ -70,5 +70,17 @@ bool Harbour::CheckCannonAvailibility(WeightEnum size) {
             return false;
     }
     return false;
+}
+
+void Harbour::SetGoodName(int i, String name) {
+    _goods[i].setName(name);
+}
+
+void Harbour::SetGoodAvailability(int i, int minAvailablity, int maxAvailability) {
+    _goods[i].setAmountMinMax(minAvailablity, maxAvailability);
+}
+
+void Harbour::SetGoodPrices(int i, int minPrice, int maxPrice) {
+    _goods[i].setPriceMinMax(minPrice, maxPrice);
 }
 
