@@ -2,6 +2,8 @@
 // Created by Marijn Heuts on 14/12/2018.
 //
 
+#include <Domain/Harbour.hpp>
+
 #include "Domain/Harbour.hpp"
 
 void Harbour::SetDistance(int i, int distance, String name) {
@@ -82,5 +84,14 @@ void Harbour::SetGoodAvailability(int i, int minAvailablity, int maxAvailability
 
 void Harbour::SetGoodPrices(int i, int minPrice, int maxPrice) {
     _goods[i].setPriceMinMax(minPrice, maxPrice);
+}
+
+Goods Harbour::getGood(String name) {
+    for (int i = 0; i < 15; ++i) {
+        if(_goods[i].GetName() == name){
+            return _goods[i];
+        }
+    }
+    return Goods();
 }
 

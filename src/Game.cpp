@@ -278,6 +278,7 @@ void Game::buildHarbourGoods(String line) {
     for (int h = 0; h <= 23; ++h) {
         for(int g = 1; g <= 15; g++){
             harbourRepository[h].SetGoodName(g-1, items[g]);
+            player().SetGoodsName(g-1, items[g]);
         }
     }
 }

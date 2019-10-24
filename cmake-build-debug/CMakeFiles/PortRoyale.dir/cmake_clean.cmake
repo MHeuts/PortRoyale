@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o"

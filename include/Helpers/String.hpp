@@ -78,12 +78,7 @@ public:
     };
 
     bool operator == (const String& other) {
-        for(int i =0; i <= length_; i++){
-            if(string_[i] != other.string_[i]){
-                return false;
-            }
-        }
-        return true;
+        return strcmp(string_, other) == 0;
     };
 
     String& operator +=(const String& other) {

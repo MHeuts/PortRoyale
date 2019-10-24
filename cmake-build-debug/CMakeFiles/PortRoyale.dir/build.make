@@ -57,22 +57,9 @@ include CMakeFiles/PortRoyale.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PortRoyale.dir/flags.make
 
-CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
-CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o: ../src/Domain/Enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp
-
-CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp > CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.i
-
-CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp -o CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.s
-
 CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o: ../src/Domain/Goods.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Goods.cpp
 
 CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.i: cmake_force
@@ -85,7 +72,7 @@ CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o: ../src/Domain/Harbour.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp
 
 CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o: ../src/Domain/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Player.cpp
 
 CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o: ../src/Domain/Ship.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Ship.cpp
 
 CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/PortRoyale.dir/src/Domain/Ship.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/Game.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PortRoyale.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PortRoyale.dir/src/Game.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/Game.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.cpp
 
 CMakeFiles/PortRoyale.dir/src/Game.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/PortRoyale.dir/src/Game.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o: ../src/States/AtSeaState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/PortRoyale.dir/src/States/AtSeaState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o: ../src/States/BuyCannonsState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o: ../src/States/BuyGoodsState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyGoodsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o: ../src/States/BuyShipState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyShipState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/PortRoyale.dir/src/States/BuyShipState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o: ../src/States/CombatState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/PortRoyale.dir/src/States/CombatState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o: ../src/States/HarbourState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/PortRoyale.dir/src/States/HarbourState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o: ../src/States/InitState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/PortRoyale.dir/src/States/InitState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o: ../src/States/SellCannonsState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o: ../src/States/SellGoodsState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellGoodsState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o: ../src/States/SetSailState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp
 
 CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.s: cmake_force
 
 CMakeFiles/PortRoyale.dir/src/main.cpp.o: CMakeFiles/PortRoyale.dir/flags.make
 CMakeFiles/PortRoyale.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PortRoyale.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PortRoyale.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PortRoyale.dir/src/main.cpp.o -c /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp
 
 CMakeFiles/PortRoyale.dir/src/main.cpp.i: cmake_force
@@ -280,7 +267,6 @@ CMakeFiles/PortRoyale.dir/src/main.cpp.s: cmake_force
 
 # Object files for target PortRoyale
 PortRoyale_OBJECTS = \
-"CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o" \
 "CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o" \
 "CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o" \
 "CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o" \
@@ -301,7 +287,6 @@ PortRoyale_OBJECTS = \
 # External object files for target PortRoyale
 PortRoyale_EXTERNAL_OBJECTS =
 
-PortRoyale: CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o
 PortRoyale: CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o
 PortRoyale: CMakeFiles/PortRoyale.dir/src/Domain/Harbour.cpp.o
 PortRoyale: CMakeFiles/PortRoyale.dir/src/Domain/Player.cpp.o
@@ -320,7 +305,7 @@ PortRoyale: CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o
 PortRoyale: CMakeFiles/PortRoyale.dir/src/main.cpp.o
 PortRoyale: CMakeFiles/PortRoyale.dir/build.make
 PortRoyale: CMakeFiles/PortRoyale.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable PortRoyale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable PortRoyale"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PortRoyale.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

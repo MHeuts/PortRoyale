@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp">
-			<Option target="PortRoyale"/>
-		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Goods.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>

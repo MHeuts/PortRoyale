@@ -123,33 +123,6 @@ PortRoyale/fast:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/build
 .PHONY : PortRoyale/fast
 
-src/Domain/Enemy.o: src/Domain/Enemy.cpp.o
-
-.PHONY : src/Domain/Enemy.o
-
-# target to build an object file
-src/Domain/Enemy.cpp.o:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o
-.PHONY : src/Domain/Enemy.cpp.o
-
-src/Domain/Enemy.i: src/Domain/Enemy.cpp.i
-
-.PHONY : src/Domain/Enemy.i
-
-# target to preprocess a source file
-src/Domain/Enemy.cpp.i:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.i
-.PHONY : src/Domain/Enemy.cpp.i
-
-src/Domain/Enemy.s: src/Domain/Enemy.cpp.s
-
-.PHONY : src/Domain/Enemy.s
-
-# target to generate assembly for a file
-src/Domain/Enemy.cpp.s:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.s
-.PHONY : src/Domain/Enemy.cpp.s
-
 src/Domain/Goods.o: src/Domain/Goods.cpp.o
 
 .PHONY : src/Domain/Goods.o
@@ -591,9 +564,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... PortRoyale"
-	@echo "... src/Domain/Enemy.o"
-	@echo "... src/Domain/Enemy.i"
-	@echo "... src/Domain/Enemy.s"
 	@echo "... src/Domain/Goods.o"
 	@echo "... src/Domain/Goods.i"
 	@echo "... src/Domain/Goods.s"
