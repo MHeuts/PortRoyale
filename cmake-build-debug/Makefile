@@ -123,32 +123,32 @@ PortRoyale/fast:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/build
 .PHONY : PortRoyale/fast
 
-src/Domain/Enemy.o: src/Domain/Enemy.cpp.o
+src/Domain/Goods.o: src/Domain/Goods.cpp.o
 
-.PHONY : src/Domain/Enemy.o
+.PHONY : src/Domain/Goods.o
 
 # target to build an object file
-src/Domain/Enemy.cpp.o:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.o
-.PHONY : src/Domain/Enemy.cpp.o
+src/Domain/Goods.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.o
+.PHONY : src/Domain/Goods.cpp.o
 
-src/Domain/Enemy.i: src/Domain/Enemy.cpp.i
+src/Domain/Goods.i: src/Domain/Goods.cpp.i
 
-.PHONY : src/Domain/Enemy.i
+.PHONY : src/Domain/Goods.i
 
 # target to preprocess a source file
-src/Domain/Enemy.cpp.i:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.i
-.PHONY : src/Domain/Enemy.cpp.i
+src/Domain/Goods.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.i
+.PHONY : src/Domain/Goods.cpp.i
 
-src/Domain/Enemy.s: src/Domain/Enemy.cpp.s
+src/Domain/Goods.s: src/Domain/Goods.cpp.s
 
-.PHONY : src/Domain/Enemy.s
+.PHONY : src/Domain/Goods.s
 
 # target to generate assembly for a file
-src/Domain/Enemy.cpp.s:
-	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Enemy.cpp.s
-.PHONY : src/Domain/Enemy.cpp.s
+src/Domain/Goods.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/Domain/Goods.cpp.s
+.PHONY : src/Domain/Goods.cpp.s
 
 src/Domain/Harbour.o: src/Domain/Harbour.cpp.o
 
@@ -312,6 +312,33 @@ src/States/BuyCannonsState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyCannonsState.cpp.s
 .PHONY : src/States/BuyCannonsState.cpp.s
 
+src/States/BuyGoodsState.o: src/States/BuyGoodsState.cpp.o
+
+.PHONY : src/States/BuyGoodsState.o
+
+# target to build an object file
+src/States/BuyGoodsState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.o
+.PHONY : src/States/BuyGoodsState.cpp.o
+
+src/States/BuyGoodsState.i: src/States/BuyGoodsState.cpp.i
+
+.PHONY : src/States/BuyGoodsState.i
+
+# target to preprocess a source file
+src/States/BuyGoodsState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.i
+.PHONY : src/States/BuyGoodsState.cpp.i
+
+src/States/BuyGoodsState.s: src/States/BuyGoodsState.cpp.s
+
+.PHONY : src/States/BuyGoodsState.s
+
+# target to generate assembly for a file
+src/States/BuyGoodsState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/BuyGoodsState.cpp.s
+.PHONY : src/States/BuyGoodsState.cpp.s
+
 src/States/BuyShipState.o: src/States/BuyShipState.cpp.o
 
 .PHONY : src/States/BuyShipState.o
@@ -447,6 +474,33 @@ src/States/SellCannonsState.cpp.s:
 	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellCannonsState.cpp.s
 .PHONY : src/States/SellCannonsState.cpp.s
 
+src/States/SellGoodsState.o: src/States/SellGoodsState.cpp.o
+
+.PHONY : src/States/SellGoodsState.o
+
+# target to build an object file
+src/States/SellGoodsState.cpp.o:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o
+.PHONY : src/States/SellGoodsState.cpp.o
+
+src/States/SellGoodsState.i: src/States/SellGoodsState.cpp.i
+
+.PHONY : src/States/SellGoodsState.i
+
+# target to preprocess a source file
+src/States/SellGoodsState.cpp.i:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.i
+.PHONY : src/States/SellGoodsState.cpp.i
+
+src/States/SellGoodsState.s: src/States/SellGoodsState.cpp.s
+
+.PHONY : src/States/SellGoodsState.s
+
+# target to generate assembly for a file
+src/States/SellGoodsState.cpp.s:
+	$(MAKE) -f CMakeFiles/PortRoyale.dir/build.make CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.s
+.PHONY : src/States/SellGoodsState.cpp.s
+
 src/States/SetSailState.o: src/States/SetSailState.cpp.o
 
 .PHONY : src/States/SetSailState.o
@@ -510,9 +564,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... PortRoyale"
-	@echo "... src/Domain/Enemy.o"
-	@echo "... src/Domain/Enemy.i"
-	@echo "... src/Domain/Enemy.s"
+	@echo "... src/Domain/Goods.o"
+	@echo "... src/Domain/Goods.i"
+	@echo "... src/Domain/Goods.s"
 	@echo "... src/Domain/Harbour.o"
 	@echo "... src/Domain/Harbour.i"
 	@echo "... src/Domain/Harbour.s"
@@ -531,6 +585,9 @@ help:
 	@echo "... src/States/BuyCannonsState.o"
 	@echo "... src/States/BuyCannonsState.i"
 	@echo "... src/States/BuyCannonsState.s"
+	@echo "... src/States/BuyGoodsState.o"
+	@echo "... src/States/BuyGoodsState.i"
+	@echo "... src/States/BuyGoodsState.s"
 	@echo "... src/States/BuyShipState.o"
 	@echo "... src/States/BuyShipState.i"
 	@echo "... src/States/BuyShipState.s"
@@ -546,6 +603,9 @@ help:
 	@echo "... src/States/SellCannonsState.o"
 	@echo "... src/States/SellCannonsState.i"
 	@echo "... src/States/SellCannonsState.s"
+	@echo "... src/States/SellGoodsState.o"
+	@echo "... src/States/SellGoodsState.i"
+	@echo "... src/States/SellGoodsState.s"
 	@echo "... src/States/SetSailState.o"
 	@echo "... src/States/SetSailState.i"
 	@echo "... src/States/SetSailState.s"

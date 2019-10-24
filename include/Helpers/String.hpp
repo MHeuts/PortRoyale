@@ -13,7 +13,7 @@ class String{
 public:
     String() :string_{nullptr}, length_{0} { };
 
-    String(const char* other) : string_{new char[length_]},
+    String(const char* other) : string_{new char[stringLength(other)]},
                                 length_{stringLength(other)} {
         strcpy(string_, other);
     };
@@ -24,12 +24,14 @@ public:
     };
 
     String(String&& other) {
+        string_ = other.string_;
+        length_ = other.length_;
         other.string_ = nullptr;
     };
 
     String& operator = (const char* other) {
         if(string_ != other){
-            length_ = stringLength(other);
+            length_ = strlen(other);
             delete[] string_;
             string_ = new char[length_];
             strcpy(string_, other);
@@ -76,12 +78,7 @@ public:
     };
 
     bool operator == (const String& other) {
-        for(int i =0; i <= length_; i++){
-            if(string_[i] != other.string_[i]){
-                return false;
-            }
-        }
-        return true;
+        return strcmp(string_, other) == 0;
     };
 
     String& operator +=(const String& other) {
@@ -102,20 +99,13 @@ public:
     };
 
     String &operator += (const char* other){
-        auto newLength = length_ + strlen(other);
-
-        char temp[newLength];
-
-        for (int i = 0;i< length_; ++i){
-            temp[i] = string_[i];
-        }
-
-        strcat(temp, other);
+        String cur{*this};
+        length_ = length_ + strlen(other);
         delete[] string_;
+        string_ = new char[length_+1];
 
-
-        length_= newLength;
-        string_ = temp;
+        strcpy(string_, cur.string_);
+        strcat(string_, other);
 
         return *this;
     }
@@ -147,6 +137,30 @@ public:
 
         return is;
     };
+
+    Vector<String> split(const char splitter) const {
+
+        Vector<String> parts{};
+        int index;
+        String part{""};
+
+        index = 0;
+        while (index < length_) {
+            if (string_[index] == splitter) {
+                parts.push_back(part);
+                part = "";
+            } else {
+                char addition[2];
+                strncpy(addition, &string_[index], 1);
+                addition[1] = '\0';
+                part += addition;
+            }
+            ++index;
+        }
+
+        parts.push_back(part);
+        return parts;
+    }
 
 private:
 

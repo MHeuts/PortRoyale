@@ -8,24 +8,24 @@
 #include "Helpers/String.hpp"
 #include "Helpers/Stack.hpp"
 #include "Domain/Goods.hpp"
-#include "Distance.hpp"
+#include "Domain/Distance.hpp"
 #include "Ship.hpp"
 
 class Harbour {
 public:
     Harbour() = default;
     Harbour(const Harbour& other) : _name{other._name} {
-//        for (int i = 0; i < 15; ++i) {
-//            _goods[i] = other._goods[i];
-//        }
+        for (int i = 0; i < 15; ++i) {
+            _goods[i] = other._goods[i];
+        }
         for (int j = 0; j < 24; ++j) {
             _distances[j] = other._distances[j];
         }
     }
     Harbour(Harbour&& other) noexcept : _name{other._name} {
-//        for (int i = 0; i < 15; ++i) {
-//            _goods[i] = std::move(other._goods[i]);
-//        }
+        for (int i = 0; i < 15; ++i) {
+            _goods[i] = std::move(other._goods[i]);
+        }
         for (int j = 0; j < 24; ++j) {
             _distances[j] = std::move(other._distances[j]);
         }
@@ -65,12 +65,18 @@ public:
 
     void DecreaseCannonAmount(WeightEnum size);
 
+    Goods getGood(int i){ return _goods[i]; }
+    Goods getGood(String name);
+
 
     void AddToShips(int i, Ship ship);
-    void GeneratePrices();
+    void RandomizeGoods();
 
     void SetName(String name) { _name = name; }
     void SetDistance(int i, int distance, String name);
+    void SetGoodName(int i, String name);
+    void SetGoodPrices(int i, int minPrice, int maxPrice);
+    void SetGoodAvailability(int i, int minAvailablity, int maxAvailability);
 };
 
 

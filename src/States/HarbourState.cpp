@@ -6,7 +6,9 @@
 #include "States/HarbourState.hpp"
 #include "States/BuyShipState.hpp"
 #include "States/BuyCannonsState.hpp"
-#include <States/SellCannonsState.hpp>
+#include "States/SellCannonsState.hpp"
+#include "States/BuyGoodsState.hpp"
+#include "States/SellGoodsState.hpp"
 
 void HarbourState::EnterState() {
     std::cout << "Welcome to " << _game->GetCurrentHarbour().GetName() << "\n";
@@ -31,9 +33,9 @@ void HarbourState::HandleInput() {
     if(input == "Quit" || input == "quit"){
         _game->Quit();
     } else if (input == "Buy Goods") {
-        std::cout << "Market is still closed\n";
+        _game->StateHandler().push_state<BuyGoodsState>(_game);
     } else if (input == "Sell Goods") {
-        std::cout << "Market is still closed\n";
+        _game->StateHandler().push_state<SellGoodsState>(_game);
     } else if (input == "Buy Cannons") {
         _game->StateHandler().push_state<BuyCannonsState>(_game);
     } else if (input == "Sell Cannons") {
@@ -77,8 +79,7 @@ void HarbourState::generateHarbour() {
     }
 
     setCannonStock();
-    setGoodsStock();
-    _game->GetCurrentHarbour().GeneratePrices();
+    _game->GetCurrentHarbour().RandomizeGoods();
 }
 
 void HarbourState::setCannonStock() {
@@ -88,8 +89,3 @@ void HarbourState::setCannonStock() {
 
     _game->GetCurrentHarbour().SetCannonStock(light, medium, heavy);
 }
-
-void HarbourState::setGoodsStock() {
-
-}
-

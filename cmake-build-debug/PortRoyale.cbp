@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Enemy.cpp">
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Goods.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp">
@@ -103,6 +103,9 @@
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyGoodsState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyShipState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
@@ -116,6 +119,9 @@
 			<Option target="PortRoyale"/>
 		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp">
+			<Option target="PortRoyale"/>
+		</Unit>
+		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellGoodsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
 		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp">
