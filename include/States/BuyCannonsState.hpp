@@ -14,7 +14,7 @@ public:
     ~BuyCannonsState() override = default;
 
     void EnterState() override;
-    void LeaveState() override { };
+    void LeaveState() override {};
 
     void ShowOptions() override;
     void HandleInput() override;
@@ -31,6 +31,9 @@ private:
         "Medium",
         "Heavy"
     };
+
+    void buyCannon(String input);
+    bool validInput(String input);
 };
 
 #endif //PORTROYALE_BUYCANNONSSTATE_HPP

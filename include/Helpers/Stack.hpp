@@ -26,7 +26,7 @@ public:
     };
 
     void Push(const T &data){
-        auto ptr = item<T>();
+        item<T>* ptr = item<T>();
         ptr->data = &data;
         ptr->next = _head;
         _head = ptr;

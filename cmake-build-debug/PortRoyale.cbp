@@ -8,129 +8,133 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug"/>
+				<Option working_dir="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug"/>
+				<Option working_dir="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PortRoyale">
-				<Option output="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/PortRoyale" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug"/>
+				<Option output="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug/PortRoyale" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 PortRoyale"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PortRoyale"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PortRoyale/fast">
-				<Option output="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/PortRoyale" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug"/>
+				<Option output="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug/PortRoyale" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 PortRoyale/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PortRoyale/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts\ 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Goods.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/Domain/Goods.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Harbour.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/Domain/Harbour.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Player.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/Domain/Player.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Domain/Ship.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/Domain/Ship.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/Game.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/Game.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/AtSeaState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/AtSeaState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyCannonsState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/BuyCannonsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyGoodsState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/BuyGoodsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/BuyShipState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/BuyShipState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/CombatState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/CombatState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/HarbourState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/HarbourState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/InitState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/InitState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellCannonsState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/SellCannonsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SellGoodsState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/SellGoodsState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/States/SetSailState.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/States/SetSailState.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/src/main.cpp">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/src/main.cpp">
 			<Option target="PortRoyale"/>
 		</Unit>
-		<Unit filename="/Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/CMakeLists.txt">
+		<Unit filename="/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -90,15 +90,20 @@ public:
         ++size_;
     }
 
-    const T operator[](int i) const {
+    const T& operator[](int i) const {
         return data_[i];
     };
 
-    void pop_back(){
+    T& operator[](int i ) {
+        return data_[i];
+    }
+
+    T pop_back(){
         if(size_ <= 0)
-            return;
-        data_[size_] = nullptr;
+            return nullptr;
+       T back =  data_[size_-1];
         --size_;
+        return back;
     };
 
     T back() const {

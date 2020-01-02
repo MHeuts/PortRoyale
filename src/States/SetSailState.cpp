@@ -18,7 +18,7 @@ void SetSailState::ShowOptions() {
 }
 
 void SetSailState::HandleInput() {
-
+    input.empty();
     std::cin >> input;
     if(input == "Return" || input == "Return to Harbour"){
         _game->StateHandler().ReturnToPreviousState();

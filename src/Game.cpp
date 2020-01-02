@@ -383,7 +383,6 @@ void Game::buildHarbourGoodsPrices(String line, int linenr) {
 
     for(int g = 1; g <= 15; g++){
 
-
         String min = items[g].split('-')[0];
         String max = items[g].split('-')[1];
 

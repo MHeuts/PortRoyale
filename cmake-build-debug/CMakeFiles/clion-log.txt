@@ -1,4 +1,4 @@
-Cannot generate into /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale
-It was created with incompatible generator 'Xcode'
-
-Please either delete it manually or select another generation directory
+/home/parallels/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/psf/Home/avans/blok_13/C++/projects/PortRoyale/PortRoyale_Marijn_Heuts 2/cmake-build-debug

@@ -19,6 +19,7 @@ void SellGoodsState::ShowOptions() {
 }
 
 void SellGoodsState::HandleInput() {
+    input.empty();
     std::cin >> input;
     if(input == "Return"){
         _game->StateHandler().ReturnToPreviousState();

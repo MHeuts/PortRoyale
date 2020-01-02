@@ -16,38 +16,44 @@ void BuyShipState::EnterState() {
 void BuyShipState::ShowOptions() {
     std::cout << "\nThe Available Ships you can buy are\n";
     for (int i = 0; i < _game->GetCurrentHarbour().GetAvailableShips().Size(); ++i) {
-        std::cout << i+1 << ") " << _game->GetCurrentHarbour().GetAvailableShips()[i].GetName() << " for " << _game->GetCurrentHarbour().GetAvailableShips()[i].GetPrice() << " Gold Pices\n";
+        std::cout <<  _game->GetCurrentHarbour().GetAvailableShips()[i].GetName() << ") for " << _game->GetCurrentHarbour().GetAvailableShips()[i].GetPrice() << " Gold Pices\n";
     }
-    std::cout << "0) Cancel";
+    std::cout << "Return) to Harbour";
 }
 
 void BuyShipState::HandleInput() {
     std::cout << "\nWhich Ship do you want to buy?\n";
-    String in;
-    std::cin >> in;
+    input.empty();
+    std::cin >> input;
 
-    char *end;
-    int optionNumber = std::strtol(in, &end, 10);
-    if(optionNumber == 0) {
+    if(input == "Return") {
         _game->StateHandler().ReturnToPreviousState();
     }
-    else if(optionNumber < 1 || optionNumber > 5) {
-        std::cout << optionNumber << " is invalid input";
-        _game->StateHandler().ReturnToPreviousState();
-        return;
-    }
-    else if(_game->GetCurrentHarbour().GetAvailableShips()[optionNumber-1].GetPrice() > _availibleFunds ){
-        std::cout << optionNumber << " is too expensive\n";
-        return;
+    else if(isShip(input)){
+
     }
     else {
-        _game->player().SpendGold(_game->GetCurrentHarbour().GetAvailableShips()[optionNumber - 1].GetPrice() -
-                                  _game->player().GetShip().GetSellPrice());
-        _game->player().SetShip(_game->GetCurrentHarbour().GetAvailableShips()[optionNumber - 1]);
-
-        std::cout << "you are now the proud owner of a " << _game->player().GetShip().GetName() << "\n";
-
-        _game->StateHandler().ReturnToPreviousState();
+        std::cout << input << " is invalid input";
     }
+}
+
+bool BuyShipState::isShip(String input) {
+    for (int i = 0; i < 5; ++i) {
+        if(input == _game->GetCurrentHarbour().GetAvailableShips()[i].GetName()){
+            if(_game->GetCurrentHarbour().GetAvailableShips()[i].GetPrice() > _availibleFunds ){
+                std::cout << input << " is too expensive\n";
+                return true;
+            }
+            _game->player().SpendGold(_game->GetCurrentHarbour().GetAvailableShips()[i].GetPrice() -
+                                      _game->player().GetShip().GetSellPrice());
+            _game->player().SetShip(_game->GetCurrentHarbour().GetAvailableShips()[i]);
+
+            std::cout << "you are now the proud owner of a " << _game->player().GetShip().GetName() << "\n";
+
+            _game->StateHandler().ReturnToPreviousState();
+            return true;
+        }
+    }
+    return false;
 }
 
