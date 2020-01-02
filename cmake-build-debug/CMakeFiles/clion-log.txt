@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale/cmake-build-debug
+Cannot generate into /Users/marijnheuts/avans/blok_13/C++/projects/PortRoyale
+It was created with incompatible generator 'Xcode'
+
+Please either delete it manually or select another generation directory

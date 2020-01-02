@@ -52,6 +52,8 @@ public:
     }
 
     ~StateManager(){
+        delete _currentState;
+        delete _previousState;
     }
 
 private:
