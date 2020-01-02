@@ -10,12 +10,12 @@
 class Goods{
 private:
     String _name;
-    int minAmount;
-    int maxAmount;
-    int ammount;
-    int price;
-    int minPrice;
-    int maxPrice;
+    int minAmount = 0;
+    int maxAmount = 0;
+    int ammount = 0;
+    int price = 0;
+    int minPrice = 0;
+    int maxPrice = 0;
 
 public:
     void setName(String name){ _name = name; }

@@ -24,6 +24,7 @@ void BuyGoodsState::ShowOptions() {
 
 
 void BuyGoodsState::HandleInput() {
+    input.empty();
     if(_game->player().AvailableSpace() == 0){
         std::cout << "You do not have enough space on your ships Cargo Hold!!!\n";
         return;

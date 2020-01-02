@@ -20,7 +20,7 @@ void HarbourState::ShowOptions() {
                  " > Buy Goods\n"
                  " > Sell Goods\n"
                  " > Buy Cannons\n"
-                 " > Sell Connons\n"
+                 " > Sell Cannons\n"
                  " > Buy Ship\n"
                  " > Repair Ship\n"
                  " > Set Sail\n"
@@ -28,7 +28,7 @@ void HarbourState::ShowOptions() {
 }
 
 void HarbourState::HandleInput() {
-    String input;
+    input.empty();
     std::cin >> input;
     if(input == "Quit" || input == "quit"){
         _game->Quit();
@@ -72,7 +72,6 @@ void HarbourState::repairShip() {
 }
 
 void HarbourState::generateHarbour() {
-
     setShipStock();
     setCannonStock();
     _game->GetCurrentHarbour().RandomizeGoods();

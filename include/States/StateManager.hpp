@@ -11,55 +11,58 @@
 #include "Helpers/String.hpp"
 #include "Helpers/Vector.hpp"
 
-//class BaseState;
+struct state{
+    BaseState *data;
+    struct state *previous;
+
+};
 
 class StateManager {
 
 public:
-    StateManager() = default;
+    StateManager(){
+
+    };
 
 
     template<class T, class ...TArgs>
     void push_state(TArgs &&...args) {
-        if(_currentState != nullptr){
-            _currentState->LeaveState();
-            _previousState = _currentState;
-        }
-
-        _currentState = new T(std::forward<TArgs>(args)...);
-        _currentState->EnterState();
+        states.push_back(new T(std::forward<TArgs>(args)...));
+        states[states.Size()-1]->EnterState();
     }
 
     bool ReturnToPreviousState(){
-        if(_previousState != nullptr){
-            _currentState = _previousState;
-            _previousState = nullptr;
+        BaseState *curr = nullptr;
+        if(states.Size()>1){
+            curr = states.pop_back();
+            delete curr;
             return true;
         }
         return false;
     }
 
     void ShowOptions(){
-        _currentState->ShowOptions();
+        states[states.Size()-1]->ShowOptions();
     }
 
     void HandleInput(){
-        _currentState->HandleInput();
+        states[states.Size()-1]->HandleInput();
     }
 
     void UpdateState(){
-        _currentState->Update();
+        states[states.Size()-1]->Update();
     }
 
     ~StateManager(){
-        delete _currentState;
-        delete _previousState;
+        BaseState *curr = nullptr;
+        while(states.Size() >0){
+            curr = states.pop_back();
+            delete curr;
+        }
     }
 
 private:
-    BaseState* _currentState;
-    BaseState* _previousState;
-    //Stack<BaseState*> _stateStack;
+    Vector<BaseState *> states;
 };
 
 

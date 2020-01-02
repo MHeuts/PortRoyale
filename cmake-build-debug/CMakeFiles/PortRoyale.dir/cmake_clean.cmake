@@ -15,8 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PortRoyale.dir/src/States/SellGoodsState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/States/SetSailState.cpp.o"
   "CMakeFiles/PortRoyale.dir/src/main.cpp.o"
-  "PortRoyale.pdb"
   "PortRoyale"
+  "PortRoyale.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

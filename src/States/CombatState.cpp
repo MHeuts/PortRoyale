@@ -27,6 +27,7 @@ void CombatState::ShowOptions() {
 }
 
 void CombatState::HandleInput() {
+    input.empty();
     std::cin >> input;
 
     if(input == "Flee"){

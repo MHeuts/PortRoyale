@@ -19,16 +19,33 @@ void BuyCannonsState::ShowOptions() {
 }
 
 void BuyCannonsState::HandleInput() {
-
-    if(_game->player().GetShip().FreeCannonSpace() == 0){
-        std::cout << "You do not have enough space on your ship to install a new cannon!!!\n";
-        return;
-    }
+    input.empty();
     std::cin >> input;
+
     if(input == "Return"){
         _game->StateHandler().ReturnToPreviousState();
     }
-    else if(input == "Small" || input == "Small Cannons"){
+    else if(validInput(input)){
+        if(_game->player().GetShip().FreeCannonSpace() == 0){
+            std::cout << "You do not have enough space on your ship to install a new cannon!!!\n";
+            return;
+        }
+        buyCannon(input);
+    }
+    else {
+        std::cout << input << " is invalid Input\n";
+        return;
+    }
+}
+
+bool BuyCannonsState::validInput(String input) {
+    if(input == "Small" || input == "Medium" || input == "Heavy")
+        return true;
+    return false;
+}
+
+void BuyCannonsState::buyCannon(String input) {
+    if(input == "Small" || input == "Small Cannons"){
         price = 50;
         Size = {Light};
     }
@@ -44,12 +61,6 @@ void BuyCannonsState::HandleInput() {
         price = 1000;
         Size = {Heavy};
     }
-    else {
-        std::cout << input << " is invalid Input\n";
-        return;
-    }
-
-
     if(_game->player().GoldAmount() < price){
         std::cout << "You do not have enough gold to buy this cannon!!!\n";
         return;
@@ -64,3 +75,5 @@ void BuyCannonsState::HandleInput() {
     _game->player().GetShip().AddCannon(Size);
     _game->GetCurrentHarbour().DecreaseCannonAmount(Size);
 }
+
+

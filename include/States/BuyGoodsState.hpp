@@ -25,6 +25,6 @@ private:
     Game* _game;
 
     bool isGoods(String input);
-    int askQuantity();
+    static int askQuantity();
 };
 #endif //PORTROYALE_BUYGOODSSTATE_HPP

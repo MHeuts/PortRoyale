@@ -11,16 +11,18 @@
 class String{
 
 public:
-    String() :string_{nullptr}, length_{0} { };
+    String() :string_{new char[length_]}, length_{0} { };
 
-    String(const char* other) : string_{new char[stringLength(other)]},
-                                length_{stringLength(other)} {
+    String(const char* other) : string_{new char[length_]},
+                                length_{strlen(other)+1} {
         strcpy(string_, other);
     };
 
-    String(const String& other) :   string_{new char[other.length_ + 1]},
-                                    length_{other.length_} {
-        strcpy(string_, other.string_);
+    String(const String& other) :   string_{new char[length_]},
+                                    length_{other.length_+1} {
+        if(this != &other) {
+            strcpy(string_, other.string_);
+        }
     };
 
     String(String&& other) {
@@ -31,7 +33,7 @@ public:
 
     String& operator = (const char* other) {
         if(string_ != other){
-            length_ = strlen(other);
+            length_ = strlen(other) +1;
             delete[] string_;
             string_ = new char[length_];
             strcpy(string_, other);
@@ -41,24 +43,22 @@ public:
 
     String& operator = (const String& other) {
         if (this != &other){
-            length_ = stringLength(other.string_);
+            length_ = (other.length_);
             delete[] string_;
-            string_ = new char[length_];
+            string_ = new char[other.length_];
             strcpy(string_, other.string_);
         }
         return *this;
     };
 
     String& operator = (String&& other) {
-        if(&other == this)
-            return *this;
+        if(this != &other){
+            delete[] string_;
+            length_ = other.length_;
+            string_ = other.string_;
 
-        delete[] string_;
-
-        length_ = stringLength(other.string_);
-
-        string_ = new char[length_];
-        strcpy(string_, other.string_);
+            other.string_ = nullptr;
+        }
 
         return *this;
     };
@@ -74,7 +74,6 @@ public:
 
     bool operator == (const char* other) {
         return strcmp(string_, other) == 0;
-
     };
 
     bool operator == (const String& other) {
@@ -82,7 +81,7 @@ public:
     };
 
     String& operator +=(const String& other) {
-        auto newLength = length_ + stringLength(other.string_);
+        auto newLength = length_ + other.length_;
 
         char* temp = new char[newLength];
 
@@ -99,14 +98,31 @@ public:
     };
 
     String &operator += (const char* other){
-        String cur{*this};
-        length_ = length_ + strlen(other);
+
+        char* temp = new char[length_ + strlen(other)+1];
+        for (unsigned j=0; j < length_; j++)
+            temp[j] = string_[j];
+
+        for (unsigned i=0; i < strlen(other)+1; i++)
+            temp[length_+i] = other[i];
+
         delete[] string_;
-        string_ = new char[length_+1];
+        length_ = length_ + strlen(other)+1;
+        string_ = temp;
+        return *this;
+    }
 
-        strcpy(string_, cur.string_);
-        strcat(string_, other);
+    String &operator += (const char other){
 
+        char* temp = new char[length_ + 1];
+        for (unsigned j=0; j < length_; j++)
+            temp[j] = string_[j];
+
+        temp[length_] = other;
+
+        delete[] string_;
+        length_ = length_ + 1;
+        string_ = temp;
         return *this;
     }
 
@@ -128,13 +144,13 @@ public:
             if (c == '\0' || c == '\n') break;
             temp.push_back(c);
         }
+        delete[] (other.string_);
         other.length_ = temp.Size();
         other.string_ = new char[other.length_ + 1];
         for (int i = 0; i < other.length_; i++) {
             other.string_[i] = temp[i];
         }
         other.string_[other.length_] = '\0';
-
         return is;
     };
 
@@ -148,32 +164,28 @@ public:
         while (index < length_) {
             if (string_[index] == splitter) {
                 parts.push_back(part);
-                part = "";
+                part.empty();
             } else {
-                char addition[2];
-                strncpy(addition, &string_[index], 1);
-                addition[1] = '\0';
+                char addition = string_[index];
                 part += addition;
             }
             ++index;
         }
-
         parts.push_back(part);
         return parts;
     }
+
+    void empty(){
+        delete[]string_;
+        length_ = 0;
+        string_ = new char[length_];
+    };
 
 private:
 
     size_t length_;
     char* string_;
 
-    size_t stringLength(const char* c) {
-        size_t result = 0;
-        while (c[result] != '\0') {
-            ++result;
-        }
-        return ++result;
-    };
 };
 
 #endif //PORTROYALE_STRING_HPP

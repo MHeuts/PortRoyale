@@ -10,7 +10,7 @@ void InitState::EnterState() {
 }
 
 void InitState::HandleInput() {
-
+    input.empty();
     std::cin >> input;
     if(input == "Quit" || input == "quit"){
         _game->Quit();

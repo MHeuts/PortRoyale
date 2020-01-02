@@ -24,7 +24,7 @@ private:
     Ship enemyShip;
     Game* _game;
     String input;
-    bool _combatOver;
+    bool _combatOver = false;
 
     void _enemyShipTurn();
     void _shoot();

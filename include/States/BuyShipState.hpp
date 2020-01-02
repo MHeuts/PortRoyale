@@ -21,5 +21,6 @@ private:
     Game* _game;
 
     int _availibleFunds;
+    bool isShip(String input);
 };
 #endif //PORTROYALE_BUYSHIPSTATE_HPP

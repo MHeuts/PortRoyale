@@ -21,7 +21,7 @@ private:
     int _gold {0};
 
     Goods Cargo[15];
-    int totalCargo;
+    int totalCargo = 0;
 
 public:
 
